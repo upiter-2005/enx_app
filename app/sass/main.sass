@@ -1,0 +1,621 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "preloader"
+//font-family: 'Inter', sans-serif;
+::placeholder
+	color: #ACACAC
+	font-size: 18px
+
+::selection
+	background-color: var(--accent)
+	color: #333
+html
+	scroll-behavior: smooth
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	background: var(--fon)
+	background: #ECF5F9
+	overflow-x: hidden
+	color: $text
+	font-weight: 400
+	background-position: right 0
+	background-attachment: fixed
+	background-repeat: no-repeat
+	background-size: cover
+	+media-breakpoint-down(md)
+		font-size: 14px
+
+	input, textarea
+		border: none
+		outline: none
+
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+a
+	color: #141414
+	transition: all .3s ease
+input
+	border-radius: 6px
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+	li
+		padding: 0
+		margin: 0
+a:focus
+	outline: none
+
+a:hover
+	//opacity: 0.7
+p
+	line-height: 24px
+.img-responsive
+	display: block
+	max-width: 100%
+	width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+	&:focus
+		outline: none
+a:hover
+	text-decoration: none
+	color: #141414
+.text-center
+	text-align: center
+h2
+	font-weight: 800
+	font-size: 36px
+b, strong
+	font-weight: bold
+button
+	border: none
+	outline: none
+	cursor: pointer
+::-webkit-scrollbar-thumb
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	background-color: var(--accent)
+	box-shadow: 0px 1px 1px #fff inset
+	background-position: center
+	background-repeat: no-repeat
+
+.white-popup
+	position: relative
+	background: #333
+	padding: 20px
+	width: auto
+	max-width: 500px
+	margin: 20px auto
+	border-radius: 5px
+	text-align: center
+	border-radius: 16px!important
+
+#mob-list
+	position: fixed
+	top: 0
+	background-color: rgba(0,0,0, .8)
+	transform: translate(0, -100%)
+	width: 100%
+	height: 100vh
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	z-index: 100
+	transition: all .3s ease
+	.close
+		position: absolute
+		top: 16px
+		right: 16px
+		color: #fff
+		z-index: 200
+	a
+		color: #fff
+		text-align: center
+		font-weight: 500
+		font-size: 22px
+		+media-breakpoint-down(md)
+			font-size: 18px
+			font-weight: 400
+	nav
+		margin-top: 55px
+		text-align: center
+
+.baner
+	background: linear-gradient(111.45deg, #C2E2FF -1.38%, #43A3FA 133.22%)
+	padding: 5px 0 55px
+	+media-breakpoint-down(md)
+		padding-bottom: 12px
+	.btnCustom
+		+media-breakpoint-down(md)
+			margin-bottom: 24px
+
+.close
+	position: absolute
+.header_logo
+	+media-breakpoint-down(md)
+		width: 70%
+		img
+			width: 100%
+.top-mnu
+	padding: 30px 0!important
+	display: flex
+	align-items: center
+	justify-content: space-between
+	+media-breakpoint-down(md)
+		flex-wrap: wrap
+		padding: 10px!important
+		//flex-direction: column
+
+	nav
+		ul
+			display: flex
+			li
+				padding: 0 20px
+				a
+					font-weight: 700
+					color: #263238
+					&:hover
+						color: $accent
+
+.dropTowns
+	background: #89C6FD
+	border-radius: 8px
+	padding: 0px 26px
+	cursor: pointer
+	width: 165px
+
+.headerPhone
+	font-weight: 700
+	color: #263238
+.btnCustom
+	font-size: 14px
+	text-transform: uppercase
+	padding: 11px 20px
+	color: #0023A0
+	font-weight: 700
+	display: inline-block
+	border-radius: 8px
+
+.btnTransparent
+	border: 3px solid #0023A0
+.top-nav
+	background: rgba(255, 255, 255, 0.9)
+	border-radius: 8px
+	padding: 14px 25px!important
+	margin-bottom: 88px
+	ul
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		a
+			color: $text
+.btnAccent
+	background: #0023A0
+	color: #fff
+h1
+	font-weight: 800
+	font-size: 48px
+	line-height: 59px
+	margin-bottom: 24px
+	+media-breakpoint-down(md)
+		margin-top: 30px
+		font-size: 42px
+		line-height: 45px
+.baner_descr
+	font-size: 18px
+	margin-bottom: 32px
+	+media-breakpoint-down(md)
+		font-size: 16px
+
+.bulets
+	padding: 92px 0
+	+media-breakpoint-down(md)
+		padding: 50px 0
+.bulets_row
+	position: relative
+	background-color: #fff
+	margin: 15px 0
+	border-top-left-radius: 8px
+	border-top-right-radius: 8px
+	padding: 63px 0
+	+media-breakpoint-down(md)
+		padding: 63px 0 34px
+	.btnAccent
+		margin-top: 16px
+	.label
+		position: absolute
+		background-image: url(../img/label.png)
+		background-position: left center
+		top: 65px
+		right: 0
+		font-weight: 700
+		font-size: 14px
+		text-transform: uppercase
+		width: 233px
+		height: 56px
+		display: flex
+		align-items: center
+		justify-content: center
+		z-index: 20
+		+media-breakpoint-down(md)
+			top: 6px
+
+	h2
+		font-weight: 800
+		font-size: 36px
+		margin-bottom: 34px
+		+media-breakpoint-down(md)
+			font-size: 26px
+			margin-bottom: 28px
+
+.bulets_rowImg
+	position: relative
+	overflow: hidden
+	img
+		position: absolute
+		right: 0
+		//object-fit: cover
+.bulets_rowImg__left
+	img
+		top: 58px
+		left: 0!important
+.flex_credit-item
+	display: flex
+	flex-wrap: wrap
+
+.creditItem
+	width: 48%
+	font-size: 13px
+	padding: 6px 0 6px 24px
+	position: relative
+	color: #5A7184
+	font-weight: 600
+	+media-breakpoint-down(md)
+		width: 100%
+	&::before
+		content: url(../img/li.svg)
+		position: absolute
+		top: 8px
+		left: 0
+.needMoney
+	padding: 45px 0
+	+media-breakpoint-down(md)
+		padding: 28px 0
+	img
+		width: 100%
+
+	h2, p
+		padding-left: 15px
+		+media-breakpoint-down(md)
+			padding-left: 0
+
+	p
+		font-size: 18px
+		color: #5A7184
+		margin-top: 32px
+		+media-breakpoint-down(md)
+			font-size: 14px
+	h2
+		+media-breakpoint-down(md)
+			font-size: 28px
+			margin-top: 24px
+.advantage
+	padding: 45px 0
+.advantageItem
+	background-color: #fff
+	padding: 40px 36px
+	text-align: center
+	border-radius: 8px
+	+media-breakpoint-down(md)
+		margin-bottom: 20px
+		padding: 24px
+	p
+		font-weight: 800
+		margin-top: 16px
+		margin-bottom: 10px
+	div
+		line-height: 20px
+		font-size: 15px
+		color: #58595C
+.clients
+	padding: 45px 0
+	+media-breakpoint-down(md)
+		padding: 24px 0
+	h2
+		+media-breakpoint-down(md)
+			font-size: 28px
+			margin-bottom: 14px
+.descr
+	+media-breakpoint-down(md)
+		font-size: 14px
+.clientItem
+	background-color: #fff
+	border-radius: 8px
+	overflow: hidden
+	+media-breakpoint-down(md)
+		margin-bottom: 12px
+	img
+		width: 100%
+		height: 250px
+		object-fit: cover
+	span,p
+		padding: 14px 20px 0
+		display: block
+	p
+		font-weight: 700
+		font-size: 20px
+		+media-breakpoint-down(md)
+			font-size: 18px
+.center-but
+	text-align: center
+	margin-top: 50px
+.calc
+.faq
+	padding: 65px 0
+	+media-breakpoint-down(md)
+		padding: 35px 0
+	h2
+		margin-bottom: 26px
+.accordion
+	width: 100%
+.custom-acc
+	background: #FFFFFF
+	border-radius: 32px!important
+	margin: 8px 0
+section
+	h2
+		color: #183B56
+		margin-bottom: 32px
+		+media-breakpoint-down(md)
+			font-size: 28px
+			text-align: center
+.ta-center
+	text-align: center
+.section-com
+.card-header.collapsed
+	color: #183B56
+.card-header
+	background: #FFFFFF
+	border-radius: 32px!important
+	width: 100%
+	cursor: pointer
+	padding: 44px 50px
+	border: none
+	font-weight: 600
+	font-size: 20px
+	color: #0023A0
+	+media-breakpoint-down(md)
+		padding: 18px 24px
+.collapsed
+.card-title
+	+media-breakpoint-down(md)
+		font-size: 16px
+.collapse
+.card-body
+.innerBanerBlock
+	position: relative
+	margin: 65px 0
+
+.innerBaner
+	position: relative
+	background-color: #89C6FD
+	border-radius: 20px
+	padding: 90px 70px!important
+	overflow: hidden
+	+media-breakpoint-down(md)
+		padding: 84px 24px 24px!important
+	.label
+		position: absolute
+		right: 0
+		top: 95px
+		background-image: url(../img/spec.png)
+		background-position: left center
+		padding-left: 44px
+		padding-right: 90px
+		font-size: 18px
+		+media-breakpoint-down(md)
+			top: 7px
+		span
+			font-weight: 800
+	h2
+		margin-bottom: 40px
+	.innerBanerImg
+		position: relative
+		img
+			position: absolute
+			top: -68px
+			left: -50px
+	.creditItem
+		width: auto
+		color: #263238
+		font-size: 16px
+		line-height: 20px
+		padding: 11px 0 11px 24px
+		+media-breakpoint-down(md)
+			font-size: 14px
+		&::before
+			+media-breakpoint-down(md)
+				top: 12px
+	.btnCustom
+		max-width: 400px
+		width: 100%
+		text-align: center
+		margin-top: 45px
+
+.news
+	padding: 65px 0
+.newItem
+	background-color: #fff
+	border-radius: 16px
+	overflow: hidden
+	+media-breakpoint-down(md)
+		margin-bottom: 16px
+	img
+		border-radius: 16px
+		width: 100%
+		height: 250px
+		object-fit: cover
+	p, span, div
+		margin: 0 32px
+
+	p
+		font-weight: 700
+		font-size: 20px
+		margin-top: 24px
+		margin-bottom: 8px
+	span
+		color: #717579
+		font-size: 16px
+		display: block
+	div
+		border-top: 1px solid #EBEBEB
+		padding-top: 16px
+		line-height: 20px
+		padding-bottom: 24px
+footer
+	padding: 100px 0 17px
+	background-color: #007EFF
+	color: #fff
+	+media-breakpoint-down(md)
+		padding-top: 40px
+	a
+		color: #fff
+		display: block
+		line-height: 20px
+.estimate
+	margin: 24px 0
+.footer-contacts
+	padding: 12px 0
+	display: block
+	font-weight: 800
+	font-size: 16px
+	line-height: 24px
+	+media-breakpoint-down(md)
+		padding: 4px 0
+.footerHeader
+	font-weight: 700
+	font-size: 20px
+	line-height: 24px
+	margin-bottom: 24px
+	+media-breakpoint-down(md)
+		margin-bottom: 8px
+		margin-top: 14px
+.footerLink
+	padding: 4px 0
+.footerLinkSoc
+	display: inline-block
+.copy
+	font-size: 12px
+	line-height: 15px
+	width: 210px!important
+	margin-top: 90px
+	+media-breakpoint-down(md)
+		margin-top: 26px
+.active
+	transform: translate(0, 0)!important
+
+.min-padding
+	margin-bottom: 0px!important
+.no-bottom-p
+	padding-bottom: 30px!important
+.pageTitle
+	padding: 0 0 140px
+	position: relative
+	overflow: hidden
+	+media-breakpoint-down(md)
+		padding-bottom: 50px
+	.breadcrumbs
+		width: 100%
+		margin-bottom: 120px
+		margin-top: 24px
+		+media-breakpoint-down(md)
+			margin-bottom: 22px
+
+		a
+			color: #7C7C7C
+		span
+			color: #263238
+	img
+		position: absolute
+		left: 35%
+		top: -120px
+		width: 970px
+	.baner_descr
+		font-size: 18px
+		+media-breakpoint-down(md)
+			font-size: 14px
+.point-item
+	background-color: #fff
+	padding: 32px 28px
+	border-radius: 8px
+	display: flex
+	align-items: center
+	font-weight: 800
+	line-height: 24px
+	margin: 15px 0
+	+media-breakpoint-down(md)
+		padding: 24px 28px
+	img
+		margin-right: 32px
+		+media-breakpoint-down(md)
+			width: 46px
+#map
+	width: 100%
+	height: 500px
+.sampleImg
+	position: relative!important
+	top: 0!important
+	left: 0!important
+.contactBox
+	background-color: #fff
+	border-radius: 10px
+	padding: 40px
+	color: #263238
+	margin-bottom: 95px
+	+media-breakpoint-down(md)
+		padding: 22px
+		margin-bottom: 30px
+	h3
+		font-weight: 800
+		font-size: 36px
+		line-height: 44px
+		color: #263238
+		+media-breakpoint-down(md)
+			font-size: 28px
+	p
+		font-size: 18px
+		+media-breakpoint-down(md)
+			font-size: 14px
+	a
+		font-weight: 800
+		font-size: 16px
+		line-height: 24px
+		display: block
+		margin: 5px 0
+		+media-breakpoint-down(md)
+			font-size: 14px
+	.c-socs
+		a
+			display: inline-block
+.contactTitle
+	padding-bottom: 50px
+	.breadcrumbs
+		margin-bottom: 0
+.row
+	+media-breakpoint-down(lg)
+		margin-left: 0!important
+		margin-right: 0!important
+
+	@import "media" // Always at the end

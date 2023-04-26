@@ -1,0 +1,196 @@
+:root {
+  --gold: #ff008e;
+  --light-shadow: #ffcd1e;
+  /* --dark-shadow: #ab1467; */
+}
+
+.wrapper-logo {
+  /* background: radial-gradient(#272727, #1b1b1b); */
+  display: grid;
+  grid-template-areas: "overlap";
+  place-content: center;
+  text-transform: uppercase;
+  height: auto;
+}
+.light div.bg {
+  filter: none;
+}
+
+.wrapper-logo > div {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #363833;
+  font-weight: 600;
+  font-size: 34px;
+  grid-area: overlap;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 4px transparent;
+}
+div.bg {
+  background-image: repeating-linear-gradient(90deg, var(--gold) 0%, var(--dark-shadow) 100%);
+  color: transparent;
+  filter: drop-shadow(5px 15px 15px black);
+  transform: scaleY(1.05);
+  transform-origin: top;
+  background: -webkit-linear-gradient(204.3deg, #ffcd1e 0.48%, #ff008e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.fg {
+  background-image: repeating-linear-gradient(5deg, var(--gold) 0%, var(--light-shadow) 100%);
+  color: #1e2127;
+  transform: scale(1);
+  background: -webkit-linear-gradient(204.3deg, #ffcd1e 0.48%, #ff008e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  /* background-color:#32312e; */
+  /* box-shadow:0px 0px 3px #000 inset; */
+}
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+.bases-token-list-all::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #a3a3a3;
+  box-shadow: 0px 1px 1px #fff inset;
+  /* background-image: url('https://yraaa.ru/_pu/24/59610063.png'); */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffd820;
+  box-shadow: 0px 1px 1px #fff inset;
+  /* background-image: url('https://yraaa.ru/_pu/24/59610063.png'); */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+  .label-switch2 .switch2 {
+    width: 106px;
+    height: 34px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 1600px) {
+  .sideebar-data {
+    position: static !important;
+  }
+}
+
+.spark {
+  color: #fedf6c;
+  text-shadow: 1px 1px 7px #ffcd1e;
+  animation-name: repeat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-weight: 800;
+}
+
+@keyframes repeat {
+  0% {
+    color: #ffcd1e;
+    text-shadow: 1px 1px 7px #ffcd1e;
+  }
+  25% {
+    color: #ffcd1e;
+    text-shadow: 1px 1px 7px #f9cf36;
+  }
+  50% {
+    color: #ffcd1e;
+    text-shadow: 1px 1px 7px #fedf6c;
+  }
+  75% {
+    color: #ffcd1e;
+    text-shadow: 1px 1px 7px #f9d13f;
+  }
+  100% {
+    color: #ffcd1e;
+    text-shadow: 1px 1px 7px #ffcd1e;
+  }
+}
+
+@media (max-width: 992px) {
+  .pl-l {
+    left: -28%;
+    transform: skew(-20deg);
+  }
+  .pl-r {
+    right: -28%;
+    transform: skew(-20deg);
+  }
+}
+
+.select select,
+.select option {
+  color: #263238;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 55px 5px 5px;
+  background-color: transparent;
+  -webkit-appearance: none; /* for Safari */
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+.select {
+  position: relative;
+  display: inline-block;
+}
+
+/* .select select:focus + .arrow,
+.select select:hover + .arrow {
+  background-color: dodgerblue;
+} */
+.select::before {
+  content: url("../img/caret.svg");
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 35px;
+  top: 6px;
+  z-index: 1;
+}

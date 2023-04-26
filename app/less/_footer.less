@@ -1,0 +1,50 @@
+footer{
+    left: 50%;
+    margin: 60px auto 0;
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 30px 40px;
+    .copy{
+        color: @accent;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       
+        .contactsLink{
+            font-family: 'CasualHardcore';
+            font-size: 20px;
+            text-align: center;
+            color: @accent;
+            text-decoration: none;
+            margin-bottom: 15px;
+            transition: all .3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+            img{
+                display: block;
+
+            }
+        }
+        .underlineLink{
+            font-family: "Ubuntu";
+            text-decoration: underline;
+            color: #14F1FF;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 19px;
+            margin-bottom: 0;
+            transition: all .3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

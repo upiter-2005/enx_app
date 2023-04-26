@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'CasualHardcore';
+  src: url(./CasualHardcore.eot);
+  src: url(./CasualHardcore.eot?#iefix) format('embedded-opentype'),
+       url(./CasualHardcore.svg#CasualHardcore) format('svg'),
+       url(./CasualHardcore.otf) format('otf'),
+       url(./CasualHardcore.woff) format('woff');
+}
