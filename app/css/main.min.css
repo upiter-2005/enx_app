@@ -242,7 +242,64 @@ header .headerBtns .navLink img {
 .recoveryBlock_BottomText a {
   color: #ebff00
 }
-/*! REGISTER end */
+/*! RECOVERY end */
+/*! PASSWORD start */
+.repeatBlock {
+  font-family: CasualHardcore;
+  color: #fff;
+  font-size: 40px;
+  max-width: 710px;
+  width: 100%;
+  margin: 10px auto;
+  background-image: url(../img/repeatBg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 44px
+}
+.repeatBlock_Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px
+}
+.repeatBlock_Top h2 {
+  margin: 0;
+  font-size: 62px;
+  font-weight: 400
+}
+.repeatBlock_TopLink {
+  margin: 0 9px 12px 9px
+}
+.repeatBlock_Bottom {
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 300
+}
+.repeatBlock_BottomLink {
+  margin-bottom: 0;
+  margin-top: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.repeatBlock_BottomLink:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.repeatBlock_BottomText {
+  margin-top: 10px
+}
+.repeatBlock_BottomText a {
+  color: #ebff00
+}
+/*! PASSWORD end */
 /*! LOGIN start */
 .loginBlock {
   font-family: CasualHardcore;
@@ -346,6 +403,44 @@ header .headerBtns .navLink img {
   padding-left: 0
 }
 /*! INPUTELEMENT end */
+/*! _informElement start */
+.informElement {
+  position: fixed;
+  width: 244px;
+  height: 94px;
+  top: 140px;
+  right: 30px;
+  background-image: url(../img/infoBg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px
+}
+.informElement .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: 0;
+  cursor: pointer
+}
+/*! _informElement end */
 /*! RADIOBUTTON start */
 .radioBlock_Element {
   display: -webkit-box;
