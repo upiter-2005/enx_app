@@ -52,6 +52,18 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed
 }
+.error-message {
+  height: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: #ff5200;
+  letter-spacing: 2px
+}
+button:disabled,
+button[disabled] {
+  -webkit-filter: sepia(1);
+  filter: sepia(1)
+}
 /*! WRAPPER start */
 .wrapper {
   width: 100vw;
@@ -164,6 +176,70 @@ header .headerBtns .navLink img {
   margin-top: 10px
 }
 .registerBlock_BottomText a {
+  color: #ebff00
+}
+/*! REGISTER end */
+/*! RECOVERY start */
+.recoveryBlock {
+  font-family: CasualHardcore;
+  color: #fff;
+  font-size: 40px;
+  max-width: 710px;
+  width: 100%;
+  margin: 10px auto;
+  background-image: url(../img/recovery.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 44px
+}
+.recoveryBlock .inputElement {
+  margin: 0 auto 22px
+}
+.recoveryBlock .inputElement_title {
+  top: calc(-100% - 16px);
+  font-weight: 400
+}
+.recoveryBlock_Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px
+}
+.recoveryBlock_Top h2 {
+  margin: 0;
+  font-size: 62px;
+  font-weight: 400
+}
+.recoveryBlock_TopLink {
+  margin: 0 9px 12px 9px
+}
+.recoveryBlock_Bottom {
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 300
+}
+.recoveryBlock_BottomLink {
+  margin-bottom: 0;
+  margin-top: 20px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.recoveryBlock_BottomLink:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.recoveryBlock_BottomText {
+  margin-top: 10px
+}
+.recoveryBlock_BottomText a {
   color: #ebff00
 }
 /*! REGISTER end */

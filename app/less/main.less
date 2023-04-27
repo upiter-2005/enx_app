@@ -31,7 +31,7 @@ body {
 	color: @text;
 	font-weight: 400;
 	padding: 0;
-	margin: 0;
+	margin: 0; 
 	box-sizing: border-box;
 
 	background-image: url(../img/bg.svg);
@@ -41,7 +41,18 @@ body {
 	background-attachment: fixed;
 
 }
+.error-message {
+    height: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #ff5200;
+    letter-spacing: 2px;
+}
 
+button:disabled,
+button[disabled]{
+    filter: sepia(1);
+}
 /*! WRAPPER start */
 @import "_wrapper.less";
 /*! WRAPPER end */
@@ -52,6 +63,10 @@ body {
 
 /*! HEADER start */
 @import "_register.less";
+/*! REGISTER end */
+
+/*! RECOVERY start */
+@import "_recovery.less";
 /*! REGISTER end */
 
 /*! LOGIN start */
