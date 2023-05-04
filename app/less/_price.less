@@ -4,14 +4,18 @@
     left: 15px;
     top: 0;
     padding: 16px;
+    padding-top: 30px;
     color: #fff;
     background-image: url(../img/priceBg.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    width: 258px;
-    height: 156px;
+    width: 227px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &_top{
         display: flex;
         align-items: center;
@@ -24,6 +28,7 @@
         }
     }
     p{
+
         font-size: 16px;
         font-weight: 700;
         margin-bottom: 5px;
@@ -34,3 +39,46 @@
         font-weight: 700;
     }
 }
+.priceBlockAbs{
+    position: absolute;
+    top: 15px;
+}
+.priceBlockBottom{
+    font-family: "Ubuntu";
+    position: absolute;
+    left: 15px;
+    top: 130px;
+    padding: 16px;
+    padding-top: 30px;
+    color: #fff;
+    background-image: url(../img/priceBg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 227px;
+    height: 116px;
+    .priceBlockAbs{
+        position: absolute;
+        top: -5px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .enx_amount{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .blueBalance{
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        color: #00FFE0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+

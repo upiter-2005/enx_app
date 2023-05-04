@@ -1,0 +1,95 @@
+
+
+.dashBlock{
+        font-family: 'CasualHardcore';
+        color: #fff;
+        font-size: 40px;
+        max-width: 710px;
+        width: 100%;
+        margin: 0px auto;
+        background-image: url(../img/dashboard-bg.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 30px;
+        position: relative;
+        z-index: 100;
+        .inputElement{
+            margin: 28px auto 22px;
+            &_title{
+                top: calc(-100% - 11px);
+                font-weight: 400;
+            }
+            input{
+                text-align: center;
+                padding-left: 0;
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+        &_Top{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 0;
+            h2{
+                margin: 0;
+                font-size: 62px;
+                font-weight: 400;
+            }
+            &Link{
+                margin: 0 9px 12px 9px
+            }
+            
+        }
+        &_Bottom{
+            text-align: center;
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            font-weight: 300;
+            
+            &Link{
+                margin-bottom: 0;
+                margin-top: 20px;
+                transition: all .3s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            &Text{
+                margin-top: 10px;
+                a{
+                    color: #EBFF00;
+                }
+                
+            }
+        }
+    }
+   .amountLabel{
+    font-family: "Ubuntu";
+    position: absolute;
+    right: 21px;
+    top: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4B4B4B;
+   } 
+   
+.myTransactions{
+    background-image: url(../img/mytrans-bg.svg);
+    position: relative;
+    z-index: 100;
+}
+.transList input::placeholder{
+    font-size: 20px;
+    font-weight: 700;
+}
+.chart{
+    max-width: 705px;
+    width: 100%;
+    margin: 17px auto 5px;
+}
+.balanceStatus{
+    width: 313px;    
+    margin: 34px auto 22px;
+}

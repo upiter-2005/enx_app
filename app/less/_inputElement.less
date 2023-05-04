@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    margin: 0 auto  55px;
+    margin: 0 auto  47px;
     max-width: 500px;
     width: 100%;
     &_ico{
@@ -45,4 +45,46 @@
         text-align: center;
         padding-left: 0;
     }
+}
+.inputElement_bonus{
+    background-image: url(../img/bonus-bg.svg);
+    max-width: 292px;
+    input{
+        text-align: center;
+        padding-left: 0;
+    }
+}
+.inputElement_50{
+    position: relative;
+    background-image: url(../img/input50.png);
+    max-width: 400px;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 12px;
+    img{
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    span{
+        font-family: "Ubuntu";
+        font-size: 24px;
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        line-height: 16px;
+        text-transform: capitalize;
+       
+        &:last-child{
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+    }
+}
+.inputRowFlex{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
 }
