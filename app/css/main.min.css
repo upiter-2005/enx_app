@@ -148,7 +148,13 @@ header .headerBtns .navLink img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 34px
+  padding: 34px;
+  position: relative
+}
+.registerBlock .fonBg {
+  position: absolute;
+  top: 0;
+  left: 0
 }
 .registerBlock_Top {
   display: -webkit-box;
@@ -158,12 +164,14 @@ header .headerBtns .navLink img {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 32px
+  margin-bottom: 32px;
+  position: relative
 }
 .registerBlock_TopLink {
   margin: 0 9px 12px 9px
 }
 .registerBlock_Bottom {
+  position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
@@ -889,9 +897,12 @@ header .headerBtns .navLink img {
 /*! FOOTER start */
 footer {
   position: fixed;
-  left: 0;
+  left: 50%;
   bottom: 0;
   margin: 60px auto 0;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
   max-width: 1400px;
   width: 100%;
   display: -webkit-box;
