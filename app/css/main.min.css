@@ -355,6 +355,144 @@ header .headerBtns .navLink img {
   color: #4b4b4b
 }
 /*! INVEST end */
+/*! WITHDRAW start */
+.withdrawBlock {
+  font-family: CasualHardcore;
+  color: #fff;
+  font-size: 40px;
+  max-width: 710px;
+  width: 100%;
+  margin: 10px auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 34px;
+  position: relative
+}
+.withdrawBlock h2 {
+  margin: 0
+}
+.withdrawBlock .inputElement_sm {
+  background-image: url(../img/inputFonSmWd.svg);
+  margin: 0 auto 47px;
+  width: 348px
+}
+.withdrawBlock .inputElement_sm .usdtIco {
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  width: 52px
+}
+.withdrawBlock .inputElement_sm .tetherText {
+  position: absolute;
+  top: 15px;
+  left: 90px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: Ubuntu
+}
+.withdrawBlock .inputElement_sm input {
+  text-align: right;
+  padding-right: 19px
+}
+.withdrawBlock .amountInput {
+  margin: 0 auto 27px
+}
+.withdrawBlock .selectChainBox {
+  position: relative
+}
+.withdrawBlock .selectChainBox .chainList {
+  background-image: url(../img/chainBg.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  font-family: Ubuntu;
+  padding: 5px 10px
+}
+.withdrawBlock .selectChainBox .chainList div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 13px;
+  cursor: pointer
+}
+.withdrawBlock .selectChainBox .chainList div:hover {
+  background-image: url(../img/hoverBsc.svg)
+}
+.withdrawBlock .selectChainBox .chainList div img {
+  width: 40px
+}
+.withdrawBlock .selectChainBox input {
+  text-align: left;
+  padding-left: 26px
+}
+.withdrawBlock .selectChainBox .chainSelectBut {
+  position: absolute;
+  left: calc(100% + 8px);
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.withdrawBlock .selectChainBox .chainSelectBut:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.withdrawBlock .fonBg {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+.withdrawBlock_Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+  position: relative
+}
+.withdrawBlock_TopLink {
+  margin: 0 9px 12px 9px
+}
+.withdrawBlock_Bottom {
+  position: relative;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 300
+}
+.withdrawBlock_BottomLink {
+  margin-bottom: 0;
+  margin-top: 20px
+}
+.withdrawBlock_BottomText {
+  margin-top: 10px
+}
+.withdrawBlock_BottomText a {
+  color: #ebff00
+}
+/*! WITHDRAW end */
 /*! DASHBOARD start */
 .dashBlock {
   font-family: CasualHardcore;
@@ -466,8 +604,33 @@ header .headerBtns .navLink img {
   margin: 17px auto 5px
 }
 .balanceStatus {
+  background-image: url(../img/statusBg.svg);
+  background-position: center;
+  position: relative;
   width: 313px;
-  margin: 34px auto 22px
+  height: 54px;
+  margin: 34px auto 22px;
+  border-radius: 20px;
+  overflow: hidden
+}
+.balanceStatusStripe {
+  width: 251px;
+  height: 50px;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  overflow: hidden;
+  border-radius: 16px
+}
+.balanceStatusStripePosition {
+  width: 251px;
+  height: 46px;
+  position: absolute;
+  left: -34%;
+  top: 0;
+  background-image: url(../img/statusStripe.svg);
+  background-position: center;
+  background-repeat: no-repeat
 }
 /*! DASHBOARD end */
 /*! PRICE start */
@@ -882,11 +1045,23 @@ header .headerBtns .navLink img {
   width: 258px
 }
 .mnu_Link {
-  display: block;
+  font-family: CasualHardcore;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 6px 0;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-  transition: all .3s ease
+  transition: all .3s ease;
+  color: #00feef;
+  font-size: 36px
+}
+.mnu_Link img {
+  margin-right: 10px
 }
 .mnu_Link:hover {
   -webkit-transform: scale(1.1);
@@ -914,7 +1089,7 @@ footer {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  padding: 0 30px 40px
+  padding: 0 10px 40px
 }
 footer .copy {
   color: #14f1ff;

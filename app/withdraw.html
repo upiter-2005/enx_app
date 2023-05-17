@@ -50,8 +50,31 @@
 
         <div class="pageBody">
 
-          <!-- _register.less-->
-          <section class="registerBlock">
+            <div class="priceBlock">
+                <p class="priceBlockAbs">ENX price</p>
+                <div class="priceBlock_top"><img src="img/coin.svg" alt=""> $0.0115</div>
+               
+             
+            </div>
+    
+            <div class="priceBlockBottom ">
+                <p class="priceBlockAbs">ENX balance</p>
+                <div class="enx_amount">1000000 enx</div>
+            </div>
+    
+            <div class="mnu">
+                <a href="#" class="mnu_Link"><img src="img/dashIco.svg" alt=""> dashboard</a>
+                <a href="#" class="mnu_Link"><img src="img/investIco.svg" alt=""> invest</a>
+                <a href="#" class="mnu_Link"><img src="img/withdrawIco.svg" alt=""> withdrawal </a>
+                <a href="#" class="mnu_Link"><img src="img/exchIco.svg" alt=""> enx reinvest</a>
+                <a href="#" class="mnu_Link"><img src="img/operIco.svg" alt=""> operations</a>
+                <a href="#" class="mnu_Link"><img src="img/refferalIco.svg" alt=""> Referral</a>
+            </div>
+
+
+          <!-- _withdraw.less-->
+          <section class="withdrawBlock">
+          
            
             <svg width="100%" height="100%" viewBox="0 0 710 830" class="fonBg">
               <defs>
@@ -95,46 +118,66 @@
              
            </svg>
 
-            <div class="registerBlock_Top">
-              <a href="#"><img src="img/registerActive.png" alt="" class="registerBlock_TopLink"></a>
-              <a href="#"><img src="img/login.png" alt="" class="registerBlock_TopLink"></a>
+           
+           <div class="withdrawBlock_Top">
+            <h2>withdrawal</h2>
+          </div>
+
+          <div class="inputRowFlex">
+            <div class="inputElement inputElement_50">
+                <img src="img/coinsIco.svg" alt="" class="inputElement_ico">
+                <span>Invested</span>
+                <span>$0.00</span>
+            </div>
+            <div class="inputElement inputElement_50">
+                <img src="img/moneyIco.svg" alt="" class="inputElement_ico">
+                <span>Withdrawn</span>
+                <span>$0.00</span>
+            </div>
+        </div>
+
+           
+
+          
+       
+            <div class="inputElement inputElement_sm mb-none amountInput">
+                <img src="img/usdt.svg" alt="" class="usdtIco">
+                <span class="tetherText">Tether</span>
+
+              <input type="text" value="0">
+            </div>
+       
+            <div class="inputElement inputElement_sm mb-none selectChainBox">
+              <input type="text" placeholder="TRC20" value="trc20">
+              <button class="chainSelectBut"><img src="img/chainArr.svg" alt=""></button>
+                <div class="chainList">
+                    <div><span>TRC20</span> <img src="img/tron.svg" alt=""></div>
+                    <div><span>BEP20</span> <img src="img/bsc.svg" alt=""></div>
+                    <div><span>MATIC</span> <img src="img/matic.svg" alt=""></div>
+                    <div><span>ERC20</span> <img src="img/eth.svg" alt=""></div>
+                </div>
             </div>
             
             <div class="inputElement">
-              <p class="inputElement_title">name</p>
-              <img src="img/loginIco.svg" alt="" class="inputElement_ico">
-              <input type="text" placeholder="user001">
-            </div>
+                <p class="inputElement_title">wallet address</p>
+                <img src="img/walletico.svg" alt="" class="inputElement_ico">
+                <input type="text" placeholder="TSAAmKKP4znQVBZHqqazUSBWB9gCq">
+              </div>
 
             <div class="inputElement">
-              <p class="inputElement_title">email</p>
-              <img src="img/mailico.svg" alt="" class="inputElement_ico">
-              <input type="text" placeholder="User001@gmail.com">
-            </div>
-            <div class="inputElement">
-              <p class="inputElement_title">password</p>
-              <img src="img/passIco.svg" alt="" class="inputElement_ico">
-              <input type="text" placeholder="User001@gmail.com">
-            </div>
-            <div class="inputElement inputElement_sm mb-none">
-              <p class="inputElement_title">You're invited by</p>
-              <img src="img/uplnerIco.svg" alt="" class="inputElement_ico">
-              <input type="text">
-            </div>
-            <div class="radioBlock_Element">
-              <label class="radioBlock">I agree to all
-                <a href="#">terms and conditions</a>
-               <input type="checkbox">
-               <span class="checkmark"></span>
-               
-             </label>
-            </div>
-            <div class="registerBlock_Bottom">
-              <a href="#"><img src="img/submitRegister.png" alt="" class="registerBlock_BottomLink"></a>
-              <p class="registerBlock_BottomText">Already have an account? <a href="#">Sign in</a></p>
+                <p class="inputElement_title">withdrawal amount</p>
+                
+                <img src="img/amount.svg" alt="" class="inputElement_ico">
+                <input type="number" placeholder="10">
+               <span class="amountLabel">USD</span>
+              </div>
+
+            <div class="withdrawBlock_Bottom">
+              <a href="#"><img src="img/withdrawBtn.svg" alt="" class="withdrawBlock_BottomLink"></a>
+              
             </div>
           </section>
-            <!-- _register.less-->
+            <!-- withdraw.less-->
         </div>
 
          <!-- _footer.less-->
