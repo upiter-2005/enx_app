@@ -4,13 +4,35 @@ footer{
     bottom: 0;
     margin: 60px auto 0;
     transform: translate(-50%, 0);
-    max-width: 1400px;
+    max-width: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 10px 40px;
-
+    padding: 0 50px 40px;
+    z-index: 2;
+    .enxMan{
+        position: absolute;
+        right: 50px;
+        bottom: 115%;
+    }
+    .enxManLogin{
+        position: absolute;
+        left: 30px;
+        bottom: 55%;
+    }
+    .enxManRecovery{
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-50%, 0);
+    }
+    .enxManPassword{
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        transform: translate(-50%, 0);
+    }
     .copy{
         color: @accent;
         font-size: 14px;

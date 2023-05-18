@@ -25,9 +25,8 @@
     <meta name="theme-color" content="#000" />
     <!-- Custom Browsers Color End -->
 
-    <!-- <link rel="stylesheet" href="https://fscar.in.ua/wp-content/themes/betheme/css/main.min.css"> -->
+
     <link rel="stylesheet" href="css/main.min.css" />
-    <!-- <link rel="stylesheet" href="https://fscar.in.ua/wp-content/themes/betheme/css/scroll.css"> -->
     <link rel="stylesheet" href="css/scroll.css" />
   </head>
 
@@ -53,6 +52,47 @@
 
           <!-- _register.less-->
           <section class="registerBlock">
+          
+            <svg width="100%" height="100%" viewBox="0 0 710 830" class="fonBg">
+              <defs>
+               <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                 <stop offset="0%" stop-color="#00EFF1"></stop>
+                 <stop offset="100%" stop-color="#0098FF"></stop>
+               </linearGradient>
+               <linearGradient id="myGradient2" gradientTransform="rotate(90)">
+                 <stop offset="0%" stop-color="#004AC2"></stop>
+                 <stop offset="100%" stop-color="#0083C2"></stop>
+               </linearGradient>
+               <linearGradient id="topDrop" gradientTransform="rotate(0)">
+                 <stop offset="0%" stop-color="#23786E"></stop>
+                 <stop offset="33%" stop-color="#1E675F"></stop>
+                 <stop offset="66%" stop-color="#123D38"></stop>
+                 <stop offset="100%" stop-color="#000"></stop>
+               </linearGradient>
+               <linearGradient id="bottomDrop" gradientTransform="rotate(0)">
+                <stop offset="0%" stop-color="#000"></stop>
+                 <stop offset="33%" stop-color="#123D38"></stop>
+                 <stop offset="66%" stop-color="#1E675F"></stop>
+                 <stop offset="100%" stop-color="#23786E"></stop>
+              
+               </linearGradient>
+               <radialGradient id="radialGradient">
+                 <stop offset="10%" stop-color="#0025AE"></stop>
+                 <stop offset="95%" stop-color="#008CCA"></stop>
+               </radialGradient>
+     </defs>
+             <path fill="url(#myGradient)" d="M 25.4505,25.9032 C 4.4280829,49.382299 0,409.22463 0,409.22463 c 0,0 -1.3881367,399.15927 11.060125,407.74996 12.471095,8.60645 99.296835,13.74239 348.762615,14.00949 109.68858,0.11744 325.20634,-2.51835 328.85439,-11.79747 27.03302,-68.76067 22.8576,-443.87969 22.8576,-443.87969 0,0 4.31276,-218.67418 -15.48418,-367.1961615 0,0 13.5119,-7.95044902 -263.23098,-7.37341682 C 156.0767,1.3143739 25.4505,25.9032 25.4505,25.9032 Z"></path>
+   
+             <path fill="url(#myGradient2)" style="opacity: .3" d="M 25.4505,25.9032 C 4.4280829,49.382299 0,409.22463 0,409.22463 c 0,0 -1.3881367,399.15927 11.060125,407.74996 12.471095,8.60645 99.296835,13.74239 348.762615,14.00949 109.68858,0.11744 325.20634,-2.51835 328.85439,-11.79747 27.03302,-68.76067 22.8576,-443.87969 22.8576,-443.87969 0,0 4.31276,-218.67418 -15.48418,-367.1961615 0,0 13.5119,-7.95044902 -263.23098,-7.37341682 C 156.0767,1.3143739 25.4505,25.9032 25.4505,25.9032 Z"></path>
+   
+             <path fill="url(#radialGradient)" style="opacity: .7" d="M 33.038235,27.271352 C 1.754758,44.398809 -7.263318,788.03895 22.863108,810.70938 38.824088,822.72584 656.19463,826.40953 683.88715,812.30284 715.05081,796.46935 712.6965,24.94779 690.11187,9.6458721 663.01874,-8.7430515 70.22738,6.8576171 33.038235,27.271352 Z"></path>
+
+             <path fill="url(#topDrop)"  style="opacity:.5; mix-blend-mode: screen;" d="m 679.241,12.6269 c 0,0 -35.49867,-7.0366124 -376.65882,-2.6465867 C 184.32277,11.502067 40.4338,32.0808 40.4338,32.0808 c 0,0 19.961198,50.740766 134.30083,80.85898 70.4067,18.54584 202.43186,-4.97584 332.74063,-54.319254 C 575.57518,32.833446 679.241,12.6269 679.241,12.6269 Z"></path>
+
+             <path fill="url(#bottomDrop)"  style="opacity:.5; mix-blend-mode: screen;" d="m 679.35723,809.18068 c 0,0 -2.48506,-20.76459 -65.69378,-32.8469 -100.61398,-19.2323 -188.21794,1.04276 -188.21794,1.04276 0,0 -109.42003,16.86141 -172.05517,18.76966 -16.59219,0.5055 -220.022064,8.86345 -220.022064,8.86345 l 288.322754,22.41931 c 0,0 107.07095,-1.09131 160.58483,-2.6069 74.16742,-2.10053 197.08137,-15.64138 197.08137,-15.64138 z"></path>
+             
+           </svg>
+
             <div class="registerBlock_Top">
               <a href="#"><img src="img/registerActive.png" alt="" class="registerBlock_TopLink"></a>
               <a href="#"><img src="img/login.png" alt="" class="registerBlock_TopLink"></a>
@@ -60,22 +100,23 @@
             
             <div class="inputElement">
               <p class="inputElement_title">name</p>
-              <img src="img/loginIco.png" alt="" class="inputElement_ico">
+              <img src="img/loginIco.svg" alt="" class="inputElement_ico">
               <input type="text" placeholder="user001">
             </div>
+
             <div class="inputElement">
               <p class="inputElement_title">email</p>
-              <img src="img/mailIco.png" alt="" class="inputElement_ico">
+              <img src="img/mailico.svg" alt="" class="inputElement_ico">
               <input type="text" placeholder="User001@gmail.com">
             </div>
             <div class="inputElement">
               <p class="inputElement_title">password</p>
-              <img src="img/passIco.png" alt="" class="inputElement_ico">
+              <img src="img/passIco.svg" alt="" class="inputElement_ico">
               <input type="text" placeholder="User001@gmail.com">
             </div>
             <div class="inputElement inputElement_sm mb-none">
               <p class="inputElement_title">You're invited by</p>
-              <img src="img/uplnerIco.png" alt="" class="inputElement_ico">
+              <img src="img/uplinerIco.svg" alt="" class="inputElement_ico">
               <input type="text">
             </div>
             <div class="radioBlock_Element">
@@ -96,6 +137,7 @@
 
          <!-- _footer.less-->
         <footer> 
+          <img src="img/enx1.png" alt="" class="enxMan">
           <div class="copy"><img src="img/copyright.svg" alt="">Copyright 2023 ENX. <br>All Rights Reserved.</div>
 
           <div class="contacts">

@@ -5,23 +5,22 @@
     max-width: 710px;
     width: 100%;
     margin: 10px auto;
-    background-image: url(../img/repeatBg.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    
     padding: 44px;
-    // .inputElement{
-    //     margin: 0 auto 22px;
-    //     &_title{
-    //         top: calc(-100% - 16px);
-    //         font-weight: 400;
-    //     }
-    // }
+    position: relative;
+    z-index: 200;
+    .fonBg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+  
     &_Top{
         display: flex;
         justify-content: center;
         width: 100%;
         margin-bottom: 32px;
+        position: relative;
         h2{
             margin: 0;
             font-size: 62px;
@@ -33,6 +32,7 @@
         
     }
     &_Bottom{
+        position: relative;
         text-align: center;
         font-family: 'Ubuntu';
         font-size: 20px;
