@@ -509,6 +509,328 @@ header .headerBtns .navLink img {
   color: #ebff00
 }
 /*! WITHDRAW end */
+/*! REINVEST start */
+.reinvestBlock {
+  font-family: CasualHardcore;
+  color: #fff;
+  font-size: 40px;
+  max-width: 710px;
+  width: 100%;
+  margin: 10px auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 34px;
+  position: relative;
+  z-index: 200
+}
+.reinvestBlock h2 {
+  margin: 0
+}
+.reinvestBlock .inputElement_sm {
+  background-image: url(../img/inputFonSmWd.svg);
+  margin: 0 auto 47px;
+  width: 348px
+}
+.reinvestBlock .inputElement_sm .usdtIco {
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  width: 52px
+}
+.reinvestBlock .inputElement_sm .tetherText {
+  position: absolute;
+  top: 15px;
+  left: 90px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: Ubuntu
+}
+.reinvestBlock .inputElement_sm input {
+  text-align: right;
+  padding-right: 19px
+}
+.reinvestBlock .exchangeTether div {
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0)
+}
+.reinvestBlock .exchangeTether div img {
+  margin-right: 9px;
+  width: 50px
+}
+.reinvestBlock .inputElement_33 {
+  width: 30%!important
+}
+.reinvestBlock .amountInput {
+  margin: 0 auto 27px
+}
+.reinvestBlock .selectChainBox {
+  position: relative
+}
+.reinvestBlock .selectChainBox .chainList {
+  background-image: url(../img/chainBg.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  font-family: Ubuntu;
+  padding: 5px 10px
+}
+.reinvestBlock .selectChainBox .chainList div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 13px;
+  cursor: pointer
+}
+.reinvestBlock .selectChainBox .chainList div:hover {
+  background-image: url(../img/hoverBsc.svg)
+}
+.reinvestBlock .selectChainBox .chainList div img {
+  width: 40px
+}
+.reinvestBlock .selectChainBox input {
+  text-align: left;
+  padding-left: 26px
+}
+.reinvestBlock .selectChainBox .chainSelectBut {
+  position: absolute;
+  left: calc(100% + 8px);
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.reinvestBlock .selectChainBox .chainSelectBut:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.reinvestBlock .fonBg {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+.reinvestBlock_Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+  position: relative
+}
+.reinvestBlock_TopLink {
+  margin: 0 9px 12px 9px
+}
+.reinvestBlock_Bottom {
+  position: relative;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 300
+}
+.reinvestBlock_BottomLink {
+  margin-bottom: 0;
+  margin-top: 20px
+}
+.reinvestBlock_BottomText {
+  margin-top: 10px
+}
+.reinvestBlock_BottomText a {
+  color: #ebff00
+}
+/*! REINVEST end */
+/*! FAQ start */
+.faqBlock {
+  font-family: CasualHardcore;
+  color: #fff;
+  font-size: 40px;
+  max-width: 710px;
+  width: 100%;
+  margin: 10px auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 34px;
+  position: relative;
+  z-index: 200
+}
+.faqBlock h2 {
+  margin: 0
+}
+.faqBlock .inputElement_sm {
+  background-image: url(../img/inputFonSmWd.svg);
+  margin: 0 auto 47px;
+  width: 348px
+}
+.faqBlock .inputElement_sm .usdtIco {
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  width: 52px
+}
+.faqBlock .inputElement_sm .tetherText {
+  position: absolute;
+  top: 15px;
+  left: 90px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: Ubuntu
+}
+.faqBlock .inputElement_sm input {
+  text-align: right;
+  padding-right: 19px
+}
+.faqBlock .exchangeTether div {
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0)
+}
+.faqBlock .exchangeTether div img {
+  margin-right: 9px;
+  width: 50px
+}
+.faqBlock .inputElement_33 {
+  width: 30%!important
+}
+.faqBlock .amountInput {
+  margin: 0 auto 27px
+}
+.faqBlock .selectChainBox {
+  position: relative
+}
+.faqBlock .selectChainBox .chainList {
+  background-image: url(../img/chainBg.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  font-family: Ubuntu;
+  padding: 5px 10px
+}
+.faqBlock .selectChainBox .chainList div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 13px;
+  cursor: pointer
+}
+.faqBlock .selectChainBox .chainList div:hover {
+  background-image: url(../img/hoverBsc.svg)
+}
+.faqBlock .selectChainBox .chainList div img {
+  width: 40px
+}
+.faqBlock .selectChainBox input {
+  text-align: left;
+  padding-left: 26px
+}
+.faqBlock .selectChainBox .chainSelectBut {
+  position: absolute;
+  left: calc(100% + 8px);
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.faqBlock .selectChainBox .chainSelectBut:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.faqBlock .fonBg {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+.faqBlock_Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+  position: relative
+}
+.faqBlock_TopLink {
+  margin: 0 9px 12px 9px
+}
+.faqBlock_Bottom {
+  position: relative;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 300
+}
+.faqBlock_BottomLink {
+  margin-bottom: 0;
+  margin-top: 20px
+}
+.faqBlock_BottomText {
+  margin-top: 10px
+}
+.faqBlock_BottomText a {
+  color: #ebff00
+}
+/*! FAQ end */
 /*! DASHBOARD start */
 .dashBlock {
   font-family: CasualHardcore;
@@ -517,13 +839,14 @@ header .headerBtns .navLink img {
   max-width: 710px;
   width: 100%;
   margin: 0 auto;
-  background-image: url(../img/dashboard-bg.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 30px;
   position: relative;
   z-index: 100
+}
+.dashBlock .fonBg {
+  position: absolute;
+  top: 0;
+  left: 0
 }
 .dashBlock .inputElement {
   margin: 28px auto 22px
@@ -539,6 +862,7 @@ header .headerBtns .navLink img {
   font-weight: 700
 }
 .dashBlock_Top {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,6 +881,7 @@ header .headerBtns .navLink img {
   margin: 0 9px 12px 9px
 }
 .dashBlock_Bottom {
+  position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
@@ -1128,6 +1453,12 @@ footer .enxManLogin {
   position: absolute;
   left: 30px;
   bottom: 55%
+}
+footer .enxManReinvest {
+  position: absolute;
+  right: 30px;
+  bottom: 70%;
+  z-index: -1
 }
 footer .enxManRecovery {
   position: absolute;

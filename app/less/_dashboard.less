@@ -7,13 +7,18 @@
         max-width: 710px;
         width: 100%;
         margin: 0px auto;
-        background-image: url(../img/dashboard-bg.svg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        // background-image: url(../img/dashboard-bg.svg);
+        // background-size: contain;
+        // background-position: center;
+        // background-repeat: no-repeat;
         padding: 30px;
         position: relative;
         z-index: 100;
+        .fonBg{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
         .inputElement{
             margin: 28px auto 22px;
             &_title{
@@ -28,6 +33,7 @@
             }
         }
         &_Top{
+            position: relative;
             display: flex;
             justify-content: center;
             width: 100%;
@@ -43,6 +49,7 @@
             
         }
         &_Bottom{
+            position: relative;
             text-align: center;
             font-family: 'Ubuntu';
             font-size: 20px;
