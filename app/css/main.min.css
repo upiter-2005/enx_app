@@ -1202,7 +1202,8 @@ header .headerBtns .navLink img {
   background-position: center;
   background-repeat: no-repeat;
   padding: 34px 40px 30px;
-  position: relative
+  position: relative;
+  z-index: 200
 }
 .loginBlock .fonBg {
   position: absolute;
@@ -1210,6 +1211,7 @@ header .headerBtns .navLink img {
   left: 0
 }
 .loginBlock_Top {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1220,9 +1222,11 @@ header .headerBtns .navLink img {
   margin-bottom: 32px
 }
 .loginBlock_TopLink {
+  position: relative;
   margin: 0 9px 12px 9px
 }
 .loginBlock_Recover {
+  position: relative;
   margin: 10px
 }
 .loginBlock_Recover a {
