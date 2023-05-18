@@ -1,46 +1,43 @@
 .container-max {
-  max-width: 1200px !important;
-  padding: 0 15px !important;
+  max-width: 1200px!important;
+  padding: 0 15px!important
 }
 .container-min {
-  max-width: 1130px !important;
-  padding: 0 !important;
+  max-width: 1130px!important;
+  padding: 0!important
 }
 @font-face {
   font-family: CasualHardcore;
   src: url(../fonts/CasualHardcore/CasualHardcore.eot);
-  src: url(../fonts/CasualHardcore/CasualHardcore.eot) format("embedded-opentype"),
-    url(../fonts/CasualHardcore/CasualHardcore.woff) format("woff"),
-    url(../fonts/CasualHardcore/CasualHardcore.ttf) format("truetype"),
-    url(../fonts/CasualHardcore/CasualHardcore.svg) format("svg");
+  src: url(../fonts/CasualHardcore/CasualHardcore.eot) format('embedded-opentype'),url(../fonts/CasualHardcore/CasualHardcore.woff) format('woff'),url(../fonts/CasualHardcore/CasualHardcore.ttf) format('truetype'),url(../fonts/CasualHardcore/CasualHardcore.svg) format('svg');
   font-weight: 400;
-  font-style: normal;
+  font-style: normal
 }
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 ::-webkit-input-placeholder {
-  color: #fff;
+  color: #fff
 }
 ::-moz-placeholder {
-  color: #fff;
+  color: #fff
 }
 :-ms-input-placeholder {
-  color: #fff;
+  color: #fff
 }
 ::-ms-input-placeholder {
-  color: #fff;
+  color: #fff
 }
 ::placeholder {
-  color: #fff;
+  color: #fff
 }
 body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu,sans-serif;
   background: #14f1ff;
   overflow-x: hidden;
   color: #263238;
@@ -53,31 +50,31 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed
 }
 .error-message {
   height: 10px;
   font-size: 18px;
   text-align: center;
   color: #ff5200;
-  letter-spacing: 2px;
+  letter-spacing: 2px
 }
 button:disabled,
 button[disabled] {
   -webkit-filter: sepia(1);
-  filter: sepia(1);
+  filter: sepia(1)
 }
 /*! WRAPPER start */
 .wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 100vh
 }
 .wrapper .pageBody {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 0;
-  position: relative;
+  padding-top: 15px;
+  position: relative
 }
 /*! WRAPPER end */
 /*! HEADER start */
@@ -96,15 +93,15 @@ header {
   -ms-flex-align: center;
   align-items: center;
   padding: 25px 30px;
-  z-index: 30;
+  z-index: 30
 }
 header .headerBtns {
   position: absolute;
   top: 25px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +109,7 @@ header .headerBtns {
   -ms-flex-pack: justify;
   justify-content: space-between;
   max-width: 630px;
-  width: 100%;
+  width: 100%
 }
 header .headerBtns .navLink {
   font-family: CasualHardcore;
@@ -127,17 +124,17 @@ header .headerBtns .navLink {
   text-decoration: none;
   text-align: center;
   font-size: 24px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 header .headerBtns .navLink:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 header .headerBtns .navLink img {
-  width: 77px;
+  width: 77px
 }
 /*! HEADER end */
 /*! HEADER start */
@@ -154,17 +151,17 @@ header .headerBtns .navLink img {
   background-repeat: no-repeat;
   padding: 34px;
   position: relative;
-  z-index: 50;
+  z-index: 50
 }
 .registerBlock .enxMan {
   position: absolute;
   left: 100%;
-  top: 38%;
+  top: 38%
 }
 .registerBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .registerBlock_Top {
   display: -webkit-box;
@@ -175,27 +172,27 @@ header .headerBtns .navLink img {
   justify-content: center;
   width: 100%;
   margin-bottom: 32px;
-  position: relative;
+  position: relative
 }
 .registerBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .registerBlock_Bottom {
   position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .registerBlock_BottomLink {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 20px
 }
 .registerBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .registerBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 /*! REGISTER end */
 /*! RECOVERY start */
@@ -212,19 +209,19 @@ header .headerBtns .navLink img {
   background-repeat: no-repeat;
   padding: 44px;
   position: relative;
-  z-index: 200;
+  z-index: 200
 }
 .recoveryBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .recoveryBlock .inputElement {
-  margin: 0 auto 22px;
+  margin: 0 auto 22px
 }
 .recoveryBlock .inputElement_title {
   top: calc(-100% - 16px);
-  font-weight: 400;
+  font-weight: 400
 }
 .recoveryBlock_Top {
   display: -webkit-box;
@@ -235,40 +232,40 @@ header .headerBtns .navLink img {
   justify-content: center;
   width: 100%;
   margin-bottom: 32px;
-  position: relative;
+  position: relative
 }
 .recoveryBlock_Top h2 {
   margin: 0;
   font-size: 62px;
-  font-weight: 400;
+  font-weight: 400
 }
 .recoveryBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .recoveryBlock_Bottom {
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
   font-weight: 300;
-  position: relative;
+  position: relative
 }
 .recoveryBlock_BottomLink {
   margin-bottom: 0;
   margin-top: 20px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .recoveryBlock_BottomLink:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 .recoveryBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .recoveryBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 /*! RECOVERY end */
 /*! INVEST start */
@@ -282,19 +279,19 @@ header .headerBtns .navLink img {
   max-width: 706px;
   margin: 10px auto;
   text-align: center;
-  padding: 44px;
+  padding: 44px
 }
 .createDepo p {
   font-family: Ubuntu;
   font-weight: 300;
   font-size: 20px;
   margin-top: 0;
-  line-height: 22px;
+  line-height: 22px
 }
 .createDepo h2 {
   font-size: 62px;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 10px
 }
 .investBlock {
   font-family: CasualHardcore;
@@ -307,20 +304,20 @@ header .headerBtns .navLink img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 44px;
+  padding: 44px
 }
 .investBlock .inputElement {
-  margin: 0 auto 22px;
+  margin: 0 auto 22px
 }
 .investBlock .inputElement_title {
   top: calc(-100% - 16px);
-  font-weight: 400;
+  font-weight: 400
 }
 .investBlock .inputElement input {
   text-align: center;
   padding-left: 0;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 700
 }
 .investBlock_Top {
   display: -webkit-box;
@@ -330,39 +327,39 @@ header .headerBtns .navLink img {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 .investBlock_Top h2 {
   margin: 0;
   font-size: 62px;
-  font-weight: 400;
+  font-weight: 400
 }
 .investBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .investBlock_Bottom {
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .investBlock_BottomLink {
   margin-bottom: 0;
   margin-top: 20px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .investBlock_BottomLink:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 .investBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .investBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 .amountLabel {
   font-family: Ubuntu;
@@ -371,7 +368,7 @@ header .headerBtns .navLink img {
   top: 18px;
   font-size: 16px;
   font-weight: 700;
-  color: #4b4b4b;
+  color: #4b4b4b
 }
 /*! INVEST end */
 /*! WITHDRAW start */
@@ -386,21 +383,21 @@ header .headerBtns .navLink img {
   background-position: center;
   background-repeat: no-repeat;
   padding: 34px;
-  position: relative;
+  position: relative
 }
 .withdrawBlock h2 {
-  margin: 0;
+  margin: 0
 }
 .withdrawBlock .inputElement_sm {
   background-image: url(../img/inputFonSmWd.svg);
   margin: 0 auto 47px;
-  width: 348px;
+  width: 348px
 }
 .withdrawBlock .inputElement_sm .usdtIco {
   position: absolute;
   top: 12px;
   left: 25px;
-  width: 52px;
+  width: 52px
 }
 .withdrawBlock .inputElement_sm .tetherText {
   position: absolute;
@@ -408,17 +405,17 @@ header .headerBtns .navLink img {
   left: 90px;
   font-size: 20px;
   text-transform: capitalize;
-  font-family: Ubuntu;
+  font-family: Ubuntu
 }
 .withdrawBlock .inputElement_sm input {
   text-align: right;
-  padding-right: 19px;
+  padding-right: 19px
 }
 .withdrawBlock .amountInput {
-  margin: 0 auto 27px;
+  margin: 0 auto 27px
 }
 .withdrawBlock .selectChainBox {
-  position: relative;
+  position: relative
 }
 .withdrawBlock .selectChainBox .chainList {
   background-image: url(../img/chainBg.svg);
@@ -431,7 +428,7 @@ header .headerBtns .navLink img {
   width: 100%;
   z-index: 20;
   font-family: Ubuntu;
-  padding: 5px 10px;
+  padding: 5px 10px
 }
 .withdrawBlock .selectChainBox .chainList div {
   display: -webkit-box;
@@ -446,17 +443,17 @@ header .headerBtns .navLink img {
   font-size: 20px;
   font-weight: 700;
   padding: 5px 13px;
-  cursor: pointer;
+  cursor: pointer
 }
 .withdrawBlock .selectChainBox .chainList div:hover {
-  background-image: url(../img/hoverBsc.svg);
+  background-image: url(../img/hoverBsc.svg)
 }
 .withdrawBlock .selectChainBox .chainList div img {
-  width: 40px;
+  width: 40px
 }
 .withdrawBlock .selectChainBox input {
   text-align: left;
-  padding-left: 26px;
+  padding-left: 26px
 }
 .withdrawBlock .selectChainBox .chainSelectBut {
   position: absolute;
@@ -466,19 +463,19 @@ header .headerBtns .navLink img {
   border: none;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .withdrawBlock .selectChainBox .chainSelectBut:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 .withdrawBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .withdrawBlock_Top {
   display: -webkit-box;
@@ -489,27 +486,27 @@ header .headerBtns .navLink img {
   justify-content: center;
   width: 100%;
   margin-bottom: 32px;
-  position: relative;
+  position: relative
 }
 .withdrawBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .withdrawBlock_Bottom {
   position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .withdrawBlock_BottomLink {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 20px
 }
 .withdrawBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .withdrawBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 /*! WITHDRAW end */
 /*! REINVEST start */
@@ -525,21 +522,21 @@ header .headerBtns .navLink img {
   background-repeat: no-repeat;
   padding: 34px;
   position: relative;
-  z-index: 200;
+  z-index: 200
 }
 .reinvestBlock h2 {
-  margin: 0;
+  margin: 0
 }
 .reinvestBlock .inputElement_sm {
   background-image: url(../img/inputFonSmWd.svg);
   margin: 0 auto 47px;
-  width: 348px;
+  width: 348px
 }
 .reinvestBlock .inputElement_sm .usdtIco {
   position: absolute;
   top: 12px;
   left: 25px;
-  width: 52px;
+  width: 52px
 }
 .reinvestBlock .inputElement_sm .tetherText {
   position: absolute;
@@ -547,11 +544,11 @@ header .headerBtns .navLink img {
   left: 90px;
   font-size: 20px;
   text-transform: capitalize;
-  font-family: Ubuntu;
+  font-family: Ubuntu
 }
 .reinvestBlock .inputElement_sm input {
   text-align: right;
-  padding-right: 19px;
+  padding-right: 19px
 }
 .reinvestBlock .exchangeTether div {
   font-family: Ubuntu;
@@ -564,22 +561,22 @@ header .headerBtns .navLink img {
   position: absolute;
   top: 13px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0)
 }
 .reinvestBlock .exchangeTether div img {
   margin-right: 9px;
-  width: 50px;
+  width: 50px
 }
 .reinvestBlock .inputElement_33 {
-  width: 30% !important;
+  width: 30%!important
 }
 .reinvestBlock .amountInput {
-  margin: 0 auto 27px;
+  margin: 0 auto 27px
 }
 .reinvestBlock .selectChainBox {
-  position: relative;
+  position: relative
 }
 .reinvestBlock .selectChainBox .chainList {
   background-image: url(../img/chainBg.svg);
@@ -592,7 +589,7 @@ header .headerBtns .navLink img {
   width: 100%;
   z-index: 20;
   font-family: Ubuntu;
-  padding: 5px 10px;
+  padding: 5px 10px
 }
 .reinvestBlock .selectChainBox .chainList div {
   display: -webkit-box;
@@ -607,17 +604,17 @@ header .headerBtns .navLink img {
   font-size: 20px;
   font-weight: 700;
   padding: 5px 13px;
-  cursor: pointer;
+  cursor: pointer
 }
 .reinvestBlock .selectChainBox .chainList div:hover {
-  background-image: url(../img/hoverBsc.svg);
+  background-image: url(../img/hoverBsc.svg)
 }
 .reinvestBlock .selectChainBox .chainList div img {
-  width: 40px;
+  width: 40px
 }
 .reinvestBlock .selectChainBox input {
   text-align: left;
-  padding-left: 26px;
+  padding-left: 26px
 }
 .reinvestBlock .selectChainBox .chainSelectBut {
   position: absolute;
@@ -627,19 +624,19 @@ header .headerBtns .navLink img {
   border: none;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .reinvestBlock .selectChainBox .chainSelectBut:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 .reinvestBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .reinvestBlock_Top {
   display: -webkit-box;
@@ -650,27 +647,27 @@ header .headerBtns .navLink img {
   justify-content: center;
   width: 100%;
   margin-bottom: 32px;
-  position: relative;
+  position: relative
 }
 .reinvestBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .reinvestBlock_Bottom {
   position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .reinvestBlock_BottomLink {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 20px
 }
 .reinvestBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .reinvestBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 /*! REINVEST end */
 /*! FAQ start */
@@ -686,10 +683,10 @@ header .headerBtns .navLink img {
   background-repeat: no-repeat;
   padding: 34px;
   position: relative;
-  z-index: 200;
+  z-index: 200
 }
 .faqBlock h2 {
-  margin: 0;
+  margin: 0
 }
 .faqBlock .inputElement_faq {
   position: relative;
@@ -700,18 +697,18 @@ header .headerBtns .navLink img {
   background-image: url(../img/inputFon.png);
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 .faqBlock .inputElement_faq .inputElement_title {
   top: 0;
   left: 0;
   text-align: left;
   margin: 0;
-  padding: 8px 16px;
+  padding: 8px 16px
 }
 .faqBlock .inputElement_faq .inputElement_ico {
   right: 0;
-  left: inherit;
+  left: inherit
 }
 .faqBlock .inputElement_faq .answer {
   display: -webkit-box;
@@ -731,7 +728,7 @@ header .headerBtns .navLink img {
   font-family: Ubuntu;
   font-size: 20px;
   font-weight: 700;
-  padding: 40px 30px;
+  padding: 40px 30px
 }
 .faqBlock .inputElement_faq .answer .fonBg {
   width: 100%;
@@ -740,7 +737,7 @@ header .headerBtns .navLink img {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 100
 }
 .faqBlock .inputElement_faq .answer p {
   position: relative;
@@ -749,18 +746,18 @@ header .headerBtns .navLink img {
   text-align: center;
   overflow-y: scroll;
   max-height: 200px;
-  margin: 0;
+  margin: 0
 }
 .faqBlock .inputElement_sm {
   background-image: url(../img/inputFonSmWd.svg);
   margin: 0 auto 47px;
-  width: 348px;
+  width: 348px
 }
 .faqBlock .inputElement_sm .usdtIco {
   position: absolute;
   top: 12px;
   left: 25px;
-  width: 52px;
+  width: 52px
 }
 .faqBlock .inputElement_sm .tetherText {
   position: absolute;
@@ -768,11 +765,11 @@ header .headerBtns .navLink img {
   left: 90px;
   font-size: 20px;
   text-transform: capitalize;
-  font-family: Ubuntu;
+  font-family: Ubuntu
 }
 .faqBlock .inputElement_sm input {
   text-align: right;
-  padding-right: 19px;
+  padding-right: 19px
 }
 .faqBlock .exchangeTether div {
   font-family: Ubuntu;
@@ -785,22 +782,22 @@ header .headerBtns .navLink img {
   position: absolute;
   top: 13px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0)
 }
 .faqBlock .exchangeTether div img {
   margin-right: 9px;
-  width: 50px;
+  width: 50px
 }
 .faqBlock .inputElement_33 {
-  width: 30% !important;
+  width: 30%!important
 }
 .faqBlock .amountInput {
-  margin: 0 auto 27px;
+  margin: 0 auto 27px
 }
 .faqBlock .selectChainBox {
-  position: relative;
+  position: relative
 }
 .faqBlock .selectChainBox .chainList {
   background-image: url(../img/chainBg.svg);
@@ -813,7 +810,7 @@ header .headerBtns .navLink img {
   width: 100%;
   z-index: 20;
   font-family: Ubuntu;
-  padding: 5px 10px;
+  padding: 5px 10px
 }
 .faqBlock .selectChainBox .chainList div {
   display: -webkit-box;
@@ -828,17 +825,17 @@ header .headerBtns .navLink img {
   font-size: 20px;
   font-weight: 700;
   padding: 5px 13px;
-  cursor: pointer;
+  cursor: pointer
 }
 .faqBlock .selectChainBox .chainList div:hover {
-  background-image: url(../img/hoverBsc.svg);
+  background-image: url(../img/hoverBsc.svg)
 }
 .faqBlock .selectChainBox .chainList div img {
-  width: 40px;
+  width: 40px
 }
 .faqBlock .selectChainBox input {
   text-align: left;
-  padding-left: 26px;
+  padding-left: 26px
 }
 .faqBlock .selectChainBox .chainSelectBut {
   position: absolute;
@@ -848,19 +845,19 @@ header .headerBtns .navLink img {
   border: none;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .faqBlock .selectChainBox .chainSelectBut:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 .faqBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .faqBlock_Top {
   display: -webkit-box;
@@ -871,27 +868,27 @@ header .headerBtns .navLink img {
   justify-content: center;
   width: 100%;
   margin-bottom: 32px;
-  position: relative;
+  position: relative
 }
 .faqBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .faqBlock_Bottom {
   position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .faqBlock_BottomLink {
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 20px
 }
 .faqBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .faqBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 /*! FAQ end */
 /*! DASHBOARD start */
@@ -904,25 +901,25 @@ header .headerBtns .navLink img {
   margin: 0 auto;
   padding: 30px;
   position: relative;
-  z-index: 100;
+  z-index: 100
 }
 .dashBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .dashBlock .inputElement {
-  margin: 28px auto 22px;
+  margin: 28px auto 22px
 }
 .dashBlock .inputElement_title {
   top: calc(-100% - 11px);
-  font-weight: 400;
+  font-weight: 400
 }
 .dashBlock .inputElement input {
   text-align: center;
   padding-left: 0;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 700
 }
 .dashBlock_Top {
   position: relative;
@@ -933,40 +930,40 @@ header .headerBtns .navLink img {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 .dashBlock_Top h2 {
   margin: 0;
   font-size: 62px;
-  font-weight: 400;
+  font-weight: 400
 }
 .dashBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .dashBlock_Bottom {
   position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .dashBlock_BottomLink {
   margin-bottom: 0;
   margin-top: 20px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .dashBlock_BottomLink:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 .dashBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .dashBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 .amountLabel {
   font-family: Ubuntu;
@@ -975,37 +972,37 @@ header .headerBtns .navLink img {
   top: 18px;
   font-size: 16px;
   font-weight: 700;
-  color: #4b4b4b;
+  color: #4b4b4b
 }
 .myTransactions {
   background-image: url(../img/mytrans-bg.svg);
   position: relative;
-  z-index: 100;
+  z-index: 100
 }
 .transList input::-webkit-input-placeholder {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700
 }
 .transList input::-moz-placeholder {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700
 }
 .transList input:-ms-input-placeholder {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700
 }
 .transList input::-ms-input-placeholder {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700
 }
 .transList input::placeholder {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700
 }
 .chart {
   max-width: 705px;
   width: 100%;
-  margin: 17px auto 5px;
+  margin: 17px auto 5px
 }
 .balanceStatus {
   background-image: url(../img/statusBg.svg);
@@ -1015,7 +1012,7 @@ header .headerBtns .navLink img {
   height: 54px;
   margin: 34px auto 22px;
   border-radius: 20px;
-  overflow: hidden;
+  overflow: hidden
 }
 .balanceStatusStripe {
   width: 251px;
@@ -1024,7 +1021,7 @@ header .headerBtns .navLink img {
   left: 7px;
   top: 3px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 16px
 }
 .balanceStatusStripePosition {
   width: 251px;
@@ -1034,7 +1031,7 @@ header .headerBtns .navLink img {
   top: 0;
   background-image: url(../img/statusStripe.svg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 /*! DASHBOARD end */
 /*! PRICE start */
@@ -1061,7 +1058,7 @@ header .headerBtns .navLink img {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center
 }
 .priceBlock_top {
   display: -webkit-box;
@@ -1073,24 +1070,24 @@ header .headerBtns .navLink img {
   text-align: left;
   font-size: 36px;
   margin-bottom: 0;
-  font-weight: 700;
+  font-weight: 700
 }
 .priceBlock_top img {
-  margin-right: 10px;
+  margin-right: 10px
 }
 .priceBlock p {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 5px;
-  margin-top: 0;
+  margin-top: 0
 }
 .priceBlock_bottom {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 700
 }
 .priceBlockAbs {
   position: absolute;
-  top: 15px;
+  top: 15px
 }
 .priceBlockBottom {
   font-family: Ubuntu;
@@ -1106,18 +1103,18 @@ header .headerBtns .navLink img {
   background-repeat: no-repeat;
   text-align: center;
   width: 227px;
-  height: 116px;
+  height: 116px
 }
 .priceBlockBottom .priceBlockAbs {
   position: absolute;
   top: -5px;
   left: 0;
   text-align: center;
-  width: 100%;
+  width: 100%
 }
 .priceBlockBottom .enx_amount {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 700
 }
 .priceBlockBottom .blueBalance {
   position: absolute;
@@ -1127,7 +1124,7 @@ header .headerBtns .navLink img {
   width: 100%;
   color: #00ffe0;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 700
 }
 /*! PRICE end */
 /*! PASSWORD start */
@@ -1140,12 +1137,12 @@ header .headerBtns .navLink img {
   margin: 10px auto;
   padding: 44px;
   position: relative;
-  z-index: 200;
+  z-index: 200
 }
 .repeatBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .repeatBlock_Top {
   display: -webkit-box;
@@ -1156,40 +1153,40 @@ header .headerBtns .navLink img {
   justify-content: center;
   width: 100%;
   margin-bottom: 32px;
-  position: relative;
+  position: relative
 }
 .repeatBlock_Top h2 {
   margin: 0;
   font-size: 62px;
-  font-weight: 400;
+  font-weight: 400
 }
 .repeatBlock_TopLink {
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .repeatBlock_Bottom {
   position: relative;
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .repeatBlock_BottomLink {
   margin-bottom: 0;
   margin-top: 0;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .repeatBlock_BottomLink:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 .repeatBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .repeatBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 /*! PASSWORD end */
 /*! LOGIN start */
@@ -1206,12 +1203,12 @@ header .headerBtns .navLink img {
   background-repeat: no-repeat;
   padding: 34px 40px 30px;
   position: relative;
-  z-index: 200;
+  z-index: 200
 }
 .loginBlock .fonBg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0
 }
 .loginBlock_Top {
   position: relative;
@@ -1222,18 +1219,18 @@ header .headerBtns .navLink img {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 32px
 }
 .loginBlock_TopLink {
   position: relative;
-  margin: 0 9px 12px 9px;
+  margin: 0 9px 12px 9px
 }
 .loginBlock_Recover {
   position: relative;
-  margin: 10px;
+  margin: 10px
 }
 .loginBlock_Recover a {
-  color: #ebff00;
+  color: #ebff00
 }
 .loginBlock_Bottom {
   position: relative;
@@ -1241,17 +1238,17 @@ header .headerBtns .navLink img {
   text-align: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .loginBlock_BottomLink {
   margin-bottom: 0;
-  margin-top: 15px;
+  margin-top: 15px
 }
 .loginBlock_BottomText {
-  margin-top: 10px;
+  margin-top: 10px
 }
 .loginBlock_BottomText a {
-  color: #ebff00;
+  color: #ebff00
 }
 /*! LOGIN end */
 /*! INPUTELEMENT start */
@@ -1263,12 +1260,12 @@ header .headerBtns .navLink img {
   position: relative;
   margin: 0 auto 47px;
   max-width: 500px;
-  width: 100%;
+  width: 100%
 }
 .inputElement_ico {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0
 }
 .inputElement_title {
   font-family: CasualHardcore;
@@ -1278,7 +1275,7 @@ header .headerBtns .navLink img {
   position: absolute;
   top: calc(-100% - 7px);
   left: 0;
-  width: 100%;
+  width: 100%
 }
 .inputElement input {
   width: 100%;
@@ -1293,23 +1290,23 @@ header .headerBtns .navLink img {
   line-height: 23px;
   color: #fff;
   position: relative;
-  top: -5px;
+  top: -5px
 }
 .inputElement_sm {
   background-image: url(../img/inputFonSm.png);
-  max-width: 400px;
+  max-width: 400px
 }
 .inputElement_sm input {
   text-align: center;
-  padding-left: 0;
+  padding-left: 0
 }
 .inputElement_bonus {
   background-image: url(../img/bonus-bg.svg);
-  max-width: 292px;
+  max-width: 292px
 }
 .inputElement_bonus input {
   text-align: center;
-  padding-left: 0;
+  padding-left: 0
 }
 .inputElement_50 {
   position: relative;
@@ -1317,15 +1314,15 @@ header .headerBtns .navLink img {
   max-width: 400px;
   display: block;
   padding-top: 32px;
-  padding-bottom: 12px;
+  padding-bottom: 12px
 }
 .inputElement_50 img {
   position: absolute;
   top: -40px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0)
 }
 .inputElement_50 span {
   font-family: Ubuntu;
@@ -1334,12 +1331,12 @@ header .headerBtns .navLink img {
   display: block;
   text-align: center;
   line-height: 16px;
-  text-transform: capitalize;
+  text-transform: capitalize
 }
 .inputElement_50 span:last-child {
   font-size: 24px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 10px
 }
 .inputRowFlex {
   margin-top: 40px;
@@ -1348,7 +1345,7 @@ header .headerBtns .navLink img {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between
 }
 /*! INPUTELEMENT end */
 /*! _informElement start */
@@ -1376,7 +1373,7 @@ header .headerBtns .navLink img {
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
-  z-index: 300;
+  z-index: 300
 }
 .informElement .close {
   position: absolute;
@@ -1387,7 +1384,7 @@ header .headerBtns .navLink img {
   margin: 0;
   border: none;
   outline: 0;
-  cursor: pointer;
+  cursor: pointer
 }
 /*! _informElement end */
 /*! RADIOBUTTON start */
@@ -1400,10 +1397,10 @@ header .headerBtns .navLink img {
   justify-content: center;
   font-family: Ubuntu;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 300
 }
 .radioBlock_Element a {
-  color: #ebff00;
+  color: #ebff00
 }
 .radioBlock {
   display: block;
@@ -1415,14 +1412,14 @@ header .headerBtns .navLink img {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none
 }
 .radioBlock input {
   position: relative;
   opacity: 0;
   cursor: pointer;
   height: 0;
-  width: 0;
+  width: 0
 }
 .checkmark {
   position: absolute;
@@ -1431,18 +1428,18 @@ header .headerBtns .navLink img {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 1px solid #fff
 }
 .radioBlock:hover input ~ .checkmark {
-  background-color: #ebff00;
+  background-color: #ebff00
 }
 .checkmark:after {
   content: "";
   position: absolute;
-  display: none;
+  display: none
 }
 .radioBlock input:checked ~ .checkmark:after {
-  display: block;
+  display: block
 }
 .radioBlock .checkmark:after {
   left: 2px;
@@ -1450,7 +1447,7 @@ header .headerBtns .navLink img {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #fff
 }
 /*! RADIOBUTTON end */
 /*! MNU start */
@@ -1461,7 +1458,8 @@ header .headerBtns .navLink img {
   top: 250px;
   padding: 16px;
   color: #fff;
-  width: 258px;
+  z-index: 150;
+  width: 258px
 }
 .mnu_Link {
   font-family: CasualHardcore;
@@ -1473,19 +1471,19 @@ header .headerBtns .navLink img {
   -ms-flex-align: center;
   align-items: center;
   padding: 6px 0;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   color: #00feef;
-  font-size: 36px;
+  font-size: 36px
 }
 .mnu_Link img {
-  margin-right: 10px;
+  margin-right: 10px
 }
 .mnu_Link:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 /*! MNU end */
 /*! FOOTER start */
@@ -1494,9 +1492,9 @@ footer {
   left: 50%;
   bottom: 0;
   margin: 60px auto 0;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
   max-width: 100%;
   width: 100%;
   display: -webkit-box;
@@ -1509,50 +1507,50 @@ footer {
   -ms-flex-align: end;
   align-items: flex-end;
   padding: 0 50px 40px;
-  z-index: 2;
+  z-index: 2
 }
 footer .enxMan {
   position: absolute;
   right: 50px;
-  bottom: 115%;
+  bottom: 115%
 }
 footer .enxManLogin {
   position: absolute;
   left: 30px;
-  bottom: 55%;
+  bottom: 55%
 }
 footer .enxManReinvest {
   position: absolute;
   right: 30px;
   bottom: 70%;
-  z-index: -1;
+  z-index: -1
 }
 footer .enxManFaq {
   position: absolute;
   right: 10px;
   bottom: 90%;
-  z-index: -1;
+  z-index: -1
 }
 footer .enxManRecovery {
   position: absolute;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0)
 }
 footer .enxManPassword {
   position: absolute;
   left: 50%;
   bottom: 50px;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0)
 }
 footer .copy {
   color: #14f1ff;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 19px
 }
 footer .contacts {
   display: -webkit-box;
@@ -1564,7 +1562,7 @@ footer .contacts {
   flex-direction: column;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end;
+  align-items: flex-end
 }
 footer .contacts .contactsLink {
   font-family: CasualHardcore;
@@ -1573,17 +1571,17 @@ footer .contacts .contactsLink {
   color: #14f1ff;
   text-decoration: none;
   margin-bottom: 15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 footer .contacts .contactsLink:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 footer .contacts .contactsLink img {
-  display: block;
+  display: block
 }
 footer .contacts .underlineLink {
   font-family: Ubuntu;
@@ -1593,22 +1591,22 @@ footer .contacts .underlineLink {
   font-weight: 600;
   line-height: 19px;
   margin-bottom: 0;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 footer .contacts .underlineLink:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1)
 }
 /*! FOOTER end */
 .mb-none {
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 .accent {
-  color: #14f1ff;
+  color: #14f1ff
 }
 .enxMan {
-  z-index: 0;
+  z-index: 0
 }
