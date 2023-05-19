@@ -74,7 +74,8 @@ button[disabled] {
   width: 100%;
   margin: 0 auto;
   padding-top: 15px;
-  position: relative
+  position: relative;
+  padding-bottom: 110px
 }
 /*! WRAPPER end */
 /*! HEADER start */
@@ -1408,6 +1409,190 @@ header .headerBtns .navLink img {
   color: #ebff00
 }
 /*! PASSWORD end */
+/*! REFERRAL start */
+.refBlock {
+  font-family: CasualHardcore;
+  color: #fff;
+  font-size: 40px;
+  max-width: 710px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 44px;
+  position: relative;
+  z-index: 200
+}
+.refBlock .fonBg {
+  position: absolute;
+  left: 0;
+  top: 0
+}
+.refBlock .inputElement {
+  margin: 0 auto 22px
+}
+.refBlock .inputElement_title {
+  top: calc(-100% - 16px);
+  font-weight: 400
+}
+.refBlock .inputElement input {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700
+}
+.refBlock .refInput input {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 93px
+}
+.refBlock_Top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px
+}
+.refBlock_Top h2 {
+  margin: 0;
+  font-size: 62px;
+  font-weight: 400
+}
+.refBlock_TopLink {
+  margin: 0 9px 12px 9px
+}
+.refBlock_Bottom {
+  position: relative;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 300
+}
+.refBlock_BottomLink {
+  margin-bottom: 0;
+  margin-top: 20px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.refBlock_BottomLink:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.refBlock_BottomText {
+  margin-top: 10px
+}
+.refBlock_BottomText a {
+  color: #ebff00
+}
+.refStatisticBlock h2 {
+  margin-top: 32px
+}
+.invitedRef {
+  position: relative
+}
+.invitedRef .refListBtn {
+  position: absolute;
+  right: 2%;
+  top: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  z-index: 200;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.invitedRef .refListBtn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+.refList {
+  width: 710px;
+  height: 800px;
+  position: absolute;
+  top: 36px;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  background-image: url(../img/listRefBg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 210
+}
+.refList h2 {
+  font-family: CasualHardcore;
+  text-align: center;
+  color: #fff;
+  font-size: 62px;
+  font-weight: 400;
+  margin-bottom: 8px
+}
+.refList .pagination {
+  margin-top: 45px
+}
+.refList .refListItem_ico {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  transform: translate(0,-50%)
+}
+.refListItem {
+  max-width: 598px;
+  height: 76px;
+  width: 100%;
+  margin: 0 auto 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 50px;
+  position: relative;
+  background-image: url(../img/listItemBG.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat
+}
+.refListItem div {
+  text-align: center
+}
+.refListItem div span {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #dadada;
+  padding: 4px 0
+}
+.refListItem div span:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff
+}
+/*! REFERRAL end */
 /*! LOGIN start */
 .loginBlock {
   font-family: CasualHardcore;
@@ -1480,6 +1665,24 @@ header .headerBtns .navLink img {
   margin: 0 auto 47px;
   max-width: 500px;
   width: 100%
+}
+.inputElement .copyBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  z-index: 200;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.inputElement .copyBtn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
 }
 .inputElement_ico {
   position: absolute;
@@ -1565,6 +1768,55 @@ header .headerBtns .navLink img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between
+}
+.inputSm {
+  background-image: url(../img/input192.svg);
+  max-width: 192px;
+  margin: 0 auto 47px
+}
+.inputSm p {
+  font-size: 32px
+}
+.inputSm input {
+  text-align: left!important;
+  top: -3px
+}
+.inputMini {
+  font-family: Ubuntu;
+  background-image: url(../img/inputMini.svg);
+  max-width: 144px;
+  margin: 0 28px 29px!important
+}
+.inputMini p {
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 700!important;
+  margin-bottom: 0;
+  top: -65%!important;
+  text-transform: uppercase
+}
+.inputMini span {
+  font-size: 16px
+}
+.inputMini input {
+  padding-left: 40px;
+  font-size: 24px!important;
+  top: -3px
+}
+.inputMini .inputElement_ico {
+  width: 50px;
+  top: 10px
+}
+.inputRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 32px
 }
 /*! INPUTELEMENT end */
 /*! _informElement start */

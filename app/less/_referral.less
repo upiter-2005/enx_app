@@ -1,0 +1,163 @@
+.refBlock{
+        font-family: 'CasualHardcore';
+        color: #fff;
+        font-size: 40px;
+        max-width: 710px;
+        width: 100%;
+        margin: 10px auto;
+    
+        padding: 44px;
+        position: relative;
+        z-index: 200;
+        .fonBg{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .inputElement{
+            margin: 0 auto 22px;
+            &_title{
+                top: calc(-100% - 16px);
+                font-weight: 400;
+            }
+            input{
+                text-align: center;
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+        .refInput{
+            input{
+                font-size: 16px;
+                text-align: left;
+                padding-left: 93px;
+            }
+          
+        }
+        &_Top{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 32px;
+            h2{
+                margin: 0;
+                font-size: 62px;
+                font-weight: 400;
+            }
+            &Link{
+                margin: 0 9px 12px 9px
+            }
+            
+        }
+        &_Bottom{
+            position: relative;
+            text-align: center;
+            font-family: 'Ubuntu';
+            font-size: 20px;
+            font-weight: 300;
+            
+            &Link{
+                margin-bottom: 0;
+                margin-top: 20px;
+                transition: all .3s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            &Text{
+                margin-top: 10px;
+                a{
+                    color: #EBFF00;
+                }
+                
+            }
+        }
+    }
+  .refStatisticBlock{
+    h2{
+        margin-top: 32px;
+    }
+  }
+  .invitedRef{
+    position: relative;
+    .refListBtn{
+        position: absolute;
+        right: 2%;
+        top: 6%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 400;
+        z-index: 200;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+  }
+  .refList{
+    width: 710px;
+    height: 800px;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image: url(../img/listRefBg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 210;
+    h2{
+        font-family: 'CasualHardcore';
+        text-align: center;
+        color: #fff;    
+        font-size: 62px;
+        font-weight: 400;
+        margin-bottom: 8px;
+    }
+    .pagination{
+        margin-top: 45px;
+    }
+    .refListItem_ico{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    &Item{
+        max-width: 598px;
+        height: 76px;
+        width: 100%;
+        margin: 0 auto 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 80px;
+        padding-right: 50px;
+        position: relative;
+        background-image: url(../img/listItemBG.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        div{
+            text-align: center;
+            span{
+                display: block;
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 400;
+                color: #DADADA;
+                padding: 4px 0;
+                &:last-child{
+                   font-size: 20px;
+                   font-weight: 700; 
+                   color: #fff;
+                }
+            }
+        }
+    }
+  }

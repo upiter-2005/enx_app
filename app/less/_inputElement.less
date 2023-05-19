@@ -7,6 +7,20 @@
     margin: 0 auto  47px;
     max-width: 500px;
     width: 100%;
+    .copyBtn{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        z-index: 200;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
     &_ico{
         position: absolute;
         left: 0;
@@ -38,6 +52,8 @@
         top: -5px;
     }
 }
+
+
 .inputElement_sm{
     background-image: url(../img/inputFonSm.png);
     max-width: 400px;
@@ -87,4 +103,50 @@
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+.inputSm{
+    background-image: url(../img/input192.svg);
+    max-width: 192px;
+    margin: 0 auto  47px;
+    p{
+        font-size: 32px;
+        
+    }
+    input{
+        text-align: left!important;
+        top: -3px;
+    }
+}
+.inputMini{
+    font-family: "Ubuntu";
+    background-image: url(../img/inputMini.svg);
+    max-width: 144px;
+    margin: 0 28px 29px!important;
+    p{
+        font-family: "Ubuntu";
+        font-size: 20px;
+        font-weight: 700!important;
+        margin-bottom: 0;
+        top: -65%!important;
+        text-transform: uppercase;
+    }
+    span{
+        font-size: 16px;
+    }
+    input{
+        padding-left: 40px;
+        font-size: 24px!important;
+        top: -3px;
+    }
+    .inputElement_ico{
+        width: 50px;
+        top: 10px;
+    }
+}
+.inputRow{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
 }
