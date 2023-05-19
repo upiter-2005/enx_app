@@ -1,15 +1,20 @@
 .createDepo{
-    background-image: url(../img/createDepobg.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+   
     font-family: 'CasualHardcore';
     color: #fff;
     max-width: 706px;
     margin: 10px auto;
     text-align: center;
     padding: 44px;
+    position: relative;
+    z-index: 200;
+    .fonBg{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
     p{
+        position: relative;
         font-family: 'Ubuntu';
         font-weight: 300;
         font-size: 20px;
@@ -17,6 +22,7 @@
         line-height: 22px;
     }
     h2{
+        position: relative;
         font-size: 62px;
         margin-bottom: 0;
         margin-top: 10px;
@@ -31,11 +37,15 @@
         max-width: 710px;
         width: 100%;
         margin: 10px auto;
-        background-image: url(../img/recovery.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+    
         padding: 44px;
+        position: relative;
+        z-index: 200;
+        .fonBg{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
         .inputElement{
             margin: 0 auto 22px;
             &_title{
@@ -50,6 +60,7 @@
             }
         }
         &_Top{
+            position: relative;
             display: flex;
             justify-content: center;
             width: 100%;
@@ -65,6 +76,7 @@
             
         }
         &_Bottom{
+            position: relative;
             text-align: center;
             font-family: 'Ubuntu';
             font-size: 20px;
