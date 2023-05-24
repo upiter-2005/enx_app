@@ -1,0 +1,476 @@
+.bodyHome{
+	background-image: none;
+	background-color: #050030;
+    position: relative;
+    .starBg{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/stars.svg);
+        background-position: center ;
+    }
+  
+}
+.home{
+    position: relative;
+    z-index: 20;
+    h2{
+        font-family: 'CasualHardcore';
+        position: relative;
+        text-align: center;
+        background: linear-gradient(113.27deg, #13AAFF 15.24%, #14F1FF 85.36%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 74px;
+        padding-bottom: 0;
+        &::after{
+            content: url(../img/lighting.svg);
+            position: absolute;
+            top: 70%;
+            left: 0;
+            width: 100%;
+            height: 7px;
+        }
+    }
+    .homeBlock1{
+        min-height: 1000px;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 150px;
+        // padding: 200px 0;
+        // background-image: url(../img/homeSpark.svg);
+        // background-position: center top;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // .h1_Img{
+        //     padding: 163px 0 353px;
+        // }
+        .videoBlock{
+            overflow: hidden;
+            
+            width: 445px;
+            height: 246px; 
+            margin: 20px auto;
+            position: relative;
+            .play{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border: none;
+                outline: none;
+                background-color: transparent;
+
+                cursor: pointer;
+                z-index: 20;
+                
+                img{
+                    transition: all .3s ease;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+              
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-image: url(../img/videoBg.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                z-index: 3;
+            }
+        }
+    }
+    .homeBlock2{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/cloud.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
+        &::after{
+            content: url(../img/rocket2.svg);
+            position: absolute;
+            top: 37%;
+            left: 46%;
+            
+        
+            z-index: 1;
+        }
+
+    }
+    .homeBlock3{
+        position: relative;
+        padding-bottom: 65px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/statSmoke.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
+       
+        .startBtn{
+            display: block;
+            width: 135px;
+            margin: 0 auto;
+            cursor: pointer;
+            position: relative;
+            z-index: 100;
+        }
+    }
+    .homeBlock_items{
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        
+        .homeItem{
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 23px;
+            text-align: center;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 2;
+            p{
+                padding: 20px 30px;
+                font-weight: 400;
+            }
+            .grColor{
+                font-family: 'XHARP';
+                background: linear-gradient(113.27deg, #13AAFF 15.24%, #14F1FF 85.36%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                font-weight: 700;
+            }
+            .blue{
+                color: #2DF8FF;
+                font-weight: 500;
+            }
+            .green{
+                color: #20FFA6;
+                font-weight: 500;
+            }
+            .boldy{
+                font-weight: 500;
+            }
+        }
+        .htI1{
+            width: 460px;
+            height: 349px;
+            background-image: url(../img/hti1.svg);
+            p{
+                width: 346px;
+            }
+        }
+        .htI2{
+            position: relative;
+            transform: translate(41px, 61px);
+            width: 424px;
+            height: 320px;
+            background-image: url(../img/hti2.svg);
+            p{
+                width: 325px;
+            }
+        }
+        .htI3{
+            position: relative;
+            transform: translate(71px, -61px);
+            
+            width: 386px;
+            height: 355px;
+            background-image: url(../img/hti3.svg);
+            p{
+                width: 394px;
+                padding: 34px;
+            }
+        }
+        .htI4{
+            position: relative;
+            transform: translate(-41px, 31px);
+            width: 373px;
+            height: 284px;
+            background-image: url(../img/hti4.svg);
+            p{
+                width: 310px;
+            }
+            &::after{
+                content: url(../img/home2_robot.svg);
+                position: absolute;
+                bottom: 73%;
+                left: 50px;
+                z-index: 1;
+            }
+            
+        }
+
+    }
+    .tokenBlock1{
+        position: relative;
+        &::before{
+            content: url(../img/tokenRobot1.svg);
+            position: absolute;
+            left: calc(50% - 550px);
+            top: 30%;
+        }
+        .chartBlock{
+            overflow: hidden;
+            width: 705px;
+            height: 390px; 
+            margin: 20px auto;
+            position: relative;
+            
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-image: url(../img/videoBg.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                z-index: 3;
+            }
+            
+        }
+        .cloud{
+            position: absolute;
+            right: 0;
+            top: 40%;
+        }
+    }
+    .tokenBlock2_flex{
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        &::after{
+            content: url(../img/text.svg);
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+        }
+        .tokenBlock2_item{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 50%;
+            color: #fff;
+            font-size: 20px;
+            line-height: 22px;
+            text-align: center;
+            z-index: 10;
+            .tokenText1{
+                position: relative;
+                background-image: url(../img/tokenStone1.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #fff;
+                padding: 20px;
+                width: 530px;
+                height: 403px;
+                padding: 115px 40px 0 50px;
+                .grColor{
+                    font-family: 'XHARP';
+                    background: linear-gradient(113.27deg, #13AAFF 15.24%, #14F1FF 85.36%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                font-weight: 700;
+                }
+            }
+            .tokenText2{
+                position: relative;
+                left: -180px;
+                top: -190px;
+                background-image: url(../img/tokenStone2.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #2DF8FF;
+                padding: 20px;
+                width: 384px;
+                height: 251px;
+                padding: 90px 50px 0 30px;
+                
+                .green{
+                    color: #20FFA6;
+                }
+                .grColor{
+                    font-family: 'XHARP';
+                    background: linear-gradient(113.27deg, #13AAFF 15.24%, #14F1FF 85.36%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                font-weight: 700;
+                }
+            }
+        }
+    }
+    .tokenBlock3{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        padding-bottom: 100px;
+        &::before{
+            content: url(../img/leftRocket.svg);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+        &::after{
+            content: url(../img/token3Cloud.svg);
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+        }
+        .grColor{
+            font-family: 'XHARP';
+            background: linear-gradient(113.27deg, #13AAFF 15.24%, #14F1FF 85.36%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 700;
+        }
+        .gold{
+            color: #FF9900;
+        }
+        .violet{
+            color: #EB00FF;
+        }
+        p{
+            max-width: 634px;
+            width: 100%;
+            margin: 0 auto 34px;
+            line-height: 21px;
+            
+        }
+        .startBtn{
+            position: relative;
+            z-index: 50;
+            display: block;
+            width: 135px;
+            margin: 70px auto 0;
+        }
+    }
+    .finStats{
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+        padding: 50px 0;
+        .finStats_left{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            right: 30px;
+
+            .finStatsItem{
+                align-self: flex-end;
+            }
+        }
+        .finStats_right{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            left: 120px;
+            .finStatsItem{
+                align-self: flex-start;
+            }
+        }
+        .finStatsItem{
+            color: #fff;
+            position: relative;
+            margin-bottom: 70px;
+            img{
+                position: absolute;
+                bottom: 0;
+                left: -60px;
+                width: 97px;
+            }
+            .absMan{
+                position: absolute;
+                bottom: 70%;
+                left: 0%;
+                width: 170px;
+            }
+            .finStatsItemTitle{
+                font-family: 'CasualHardcore';
+               font-size: 30px;
+               line-height: 28px;
+               margin: 0 0 0 40px ; 
+               position: relative;
+               z-index: 10;
+            }
+            .finStatsItemValue{
+                width: 200px;
+                height: 56px;
+                text-align: center;
+                font-size: 20px;
+                line-height: 56px;
+                font-weight: 700;
+                background-image: url(../img/statsField.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        
+    }
+}

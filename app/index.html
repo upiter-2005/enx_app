@@ -30,125 +30,149 @@
     <link rel="stylesheet" href="css/scroll.css" />
   </head>
 
-  <body>
+  <body class="bodyHome">
 
-
-      <div class="wrapper">
-        <!-- _header.less-->
-        <header class="header">
+    <div class="starBg"></div>
+         <!-- _header.less-->
+         <header class="header">
           <a href="#"><img src="img/logo.svg" alt=""></a>
           <div class="headerBtns">
             <a href="" class="navLink"><img src="img/home.svg" alt="">Home</a>
             <a href="" class="navLink"><img src="img/btnToken.svg" alt="">token enx</a>
             <a href="" class="navLink"><img src="img/energy.svg" alt="">energy galaxy</a>
+            <a href="" class="navLink"><img src="img/lucky.svg" alt="">lucky fun</a>
             <a href="" class="navLink"><img src="img/present.svg" alt="">presentation</a>
             <a href="" class="navLink"><img src="img/info.svg" alt="">f-a-q</a>
           </div>
-          <a href="#"><img src="img/account.svg" alt=""></a> 
+          <a href="#" class="accountBtn"><img src="img/account.svg" alt="">My account</a> 
+          <a href="#" class="mobMnuOpen"><img src="img/mnuBar.svg" alt=""></a> 
+         
+          <div class="languages">
+            <button><img src="img/en.svg" class="current-lang" alt=""></button>
+  
+            <a href="#" class="langItem"><img src="img/sp.svg" alt=""></a>
+            <a href="#" class="langItem"><img src="img/ru.svg" alt=""></a>
+            <a href="#" class="langItem"><img src="img/ch.svg" alt=""></a>
+            <a href="#" class="langItem"><img src="img/ua.svg" alt=""></a>
+            <a href="#" class="langItem"><img src="img/gb.svg" alt=""></a>
+          </div>
+          <!-- _languages.less-->
         </header>
         <!-- _header.less-->
+        <a href="#" class="toolsMnuOpen"><img src="img/toolIco.svg" alt=""></a> 
 
         <div class="pageBody">
 
-          <!-- _register.less-->
-          <section class="registerBlock">
+          <!-- _home.less-->
+          <section class="home">
            
-            <svg width="100%" height="100%" viewBox="0 0 710 830" class="fonBg">
-              <defs>
-               <linearGradient id="myGradient" gradientTransform="rotate(90)">
-                 <stop offset="0%" stop-color="#00EFF1"></stop>
-                 <stop offset="100%" stop-color="#0098FF"></stop>
-               </linearGradient>
-               <linearGradient id="myGradient2" gradientTransform="rotate(90)">
-                 <stop offset="0%" stop-color="#004AC2"></stop>
-                 <stop offset="100%" stop-color="#0083C2"></stop>
-               </linearGradient>
-               <linearGradient id="topDrop" gradientTransform="rotate(0)">
-                 <stop offset="0%" stop-color="#23786E"></stop>
-                 <stop offset="33%" stop-color="#1E675F"></stop>
-                 <stop offset="66%" stop-color="#123D38"></stop>
-                 <stop offset="100%" stop-color="#000"></stop>
-               </linearGradient>
-               <linearGradient id="bottomDrop" gradientTransform="rotate(0)">
-                <stop offset="0%" stop-color="#000"></stop>
-                 <stop offset="33%" stop-color="#123D38"></stop>
-                 <stop offset="66%" stop-color="#1E675F"></stop>
-                 <stop offset="100%" stop-color="#23786E"></stop>
+            <div class="homeBlock homeBlock1">
+              <!-- <img src="img/homeTitle.svg" alt="" class="h1_Img"> -->
+              <img src="img/homeBanner.svg" alt="" class="img-responsive">
               
-               </linearGradient>
-               <radialGradient id="radialGradient">
-                 <stop offset="10%" stop-color="#0025AE"></stop>
-                 <stop offset="95%" stop-color="#008CCA"></stop>
-               </radialGradient>
-     </defs>
-             <path fill="url(#myGradient)" d="M 25.4505,25.9032 C 4.4280829,49.382299 0,409.22463 0,409.22463 c 0,0 -1.3881367,399.15927 11.060125,407.74996 12.471095,8.60645 99.296835,13.74239 348.762615,14.00949 109.68858,0.11744 325.20634,-2.51835 328.85439,-11.79747 27.03302,-68.76067 22.8576,-443.87969 22.8576,-443.87969 0,0 4.31276,-218.67418 -15.48418,-367.1961615 0,0 13.5119,-7.95044902 -263.23098,-7.37341682 C 156.0767,1.3143739 25.4505,25.9032 25.4505,25.9032 Z"></path>
-   
-             <path fill="url(#myGradient2)" style="opacity: .3" d="M 25.4505,25.9032 C 4.4280829,49.382299 0,409.22463 0,409.22463 c 0,0 -1.3881367,399.15927 11.060125,407.74996 12.471095,8.60645 99.296835,13.74239 348.762615,14.00949 109.68858,0.11744 325.20634,-2.51835 328.85439,-11.79747 27.03302,-68.76067 22.8576,-443.87969 22.8576,-443.87969 0,0 4.31276,-218.67418 -15.48418,-367.1961615 0,0 13.5119,-7.95044902 -263.23098,-7.37341682 C 156.0767,1.3143739 25.4505,25.9032 25.4505,25.9032 Z"></path>
-   
-             <path fill="url(#radialGradient)" style="opacity: .7" d="M 33.038235,27.271352 C 1.754758,44.398809 -7.263318,788.03895 22.863108,810.70938 38.824088,822.72584 656.19463,826.40953 683.88715,812.30284 715.05081,796.46935 712.6965,24.94779 690.11187,9.6458721 663.01874,-8.7430515 70.22738,6.8576171 33.038235,27.271352 Z"></path>
-
-             <path fill="url(#topDrop)"  style="opacity:.5; mix-blend-mode: screen;" d="m 679.241,12.6269 c 0,0 -35.49867,-7.0366124 -376.65882,-2.6465867 C 184.32277,11.502067 40.4338,32.0808 40.4338,32.0808 c 0,0 19.961198,50.740766 134.30083,80.85898 70.4067,18.54584 202.43186,-4.97584 332.74063,-54.319254 C 575.57518,32.833446 679.241,12.6269 679.241,12.6269 Z"></path>
-
-             <path fill="url(#bottomDrop)"  style="opacity:.5; mix-blend-mode: screen;" d="m 679.35723,809.18068 c 0,0 -2.48506,-20.76459 -65.69378,-32.8469 -100.61398,-19.2323 -188.21794,1.04276 -188.21794,1.04276 0,0 -109.42003,16.86141 -172.05517,18.76966 -16.59219,0.5055 -220.022064,8.86345 -220.022064,8.86345 l 288.322754,22.41931 c 0,0 107.07095,-1.09131 160.58483,-2.6069 74.16742,-2.10053 197.08137,-15.64138 197.08137,-15.64138 z"></path>
-             
-           </svg>
-
-            <div class="registerBlock_Top">
-              <a href="#"><img src="img/registerActive.png" alt="" class="registerBlock_TopLink"></a>
-              <a href="#"><img src="img/login.png" alt="" class="registerBlock_TopLink"></a>
-            </div>
-            
-            <div class="inputElement">
-              <p class="inputElement_title">name</p>
-              <img src="img/loginIco.svg" alt="" class="inputElement_ico">
-              <input type="text" placeholder="user001">
+              <h2>ENX TOKEN VIDEO PRESENTATION</h2>
+              <div class="videoBlock">
+                <button class="play"><img src="img/play.svg" alt=""></button>
+                <img src="img/video.svg" alt="">
+              </div>
             </div>
 
-            <div class="inputElement">
-              <p class="inputElement_title">email</p>
-              <img src="img/mailico.svg" alt="" class="inputElement_ico">
-              <input type="text" placeholder="User001@gmail.com">
+
+
+            <div class="homeBlock homeBlock2">
+              <h2>PROJECT FEATURES</h2>
+              <div class="homeBlock_items">
+                <div class="homeItem htI1">
+                  <p>All profits are paid out in our own <span class="grColor">ENX</span> tokens, which is fully equivalent to <span class="blue">1-2%</span> per day of the amount of your funds. <span class="grColor">ENX</span> is open for internal exchange for the <span class="green">USDT</span> cryptocurrency on four networks.</p>
+                  
+                </div>
+                <div class="homeItem htI2">
+                  <p>The <span class="grColor">ENX</span> token has its own ecosystem and is isolated from other cryptocurrencies, so the growth of the <span class="grColor">ENX</span> price depends only on the success of the <span class="boldy">ENERGY GALAXY</span>  ecosystem.</p>
+                </div>
+                <div class="homeItem htI3">
+                 <p> A profitable affiliate program for active participants is available to absolutely everyone. The ideal program to grow your community. <span class="blue">5 levels</span> of affiliate bonuses: <span class="grColor"> 3%, 3%, 3%, 3%, 3%</span>.</p>
+                </div>
+                <div class="homeItem htI4">
+                  <p>Unique <span class="blue">BONUS</span> program: being active, you get bonus funds that are added to your deposit and bring you additional daily income in <span class="grColor">ENX</span> tokens.</p>
+                </div>
+              </div>
             </div>
-            <div class="inputElement">
-              <p class="inputElement_title">password</p>
-              <img src="img/passIco.svg" alt="" class="inputElement_ico">
-              <input type="text" placeholder="User001@gmail.com">
+
+
+            <div class="homeBlock homeBlock3">
+              <h2>FINANCIAL STATS</h2>
+              
+              <div class="finStats">
+                <div class="finStats_left">
+                  <div class="finStatsItem">
+                    <img src="img/fs1.svg" alt="">
+                    <p class="finStatsItemTitle">Total invested</p>
+                    <div class="finStatsItemValue">101 032 $</div>
+                  </div>
+                  <div class="finStatsItem">
+                    <img src="img/fs2.svg" alt="">
+                    <p class="finStatsItemTitle">Earned by members</p>
+                    <div class="finStatsItemValue">792 945 ENХ</div>
+                  </div>
+                  <div class="finStatsItem">
+                    <img src="img/fs3.svg" alt="">
+                    <p class="finStatsItemTitle">Total participants</p>
+                    <div class="finStatsItemValue">125</div>
+                  </div>
+                </div>
+                <div class="finStats_right">
+                  <div class="finStatsItem">
+                    <img src="img/homeStatMan.svg" class="absMan" alt="">
+                    <img src="img/fs4.svg" alt="">
+                    <p class="finStatsItemTitle">Referral bonus:</p>
+                    <div class="finStatsItemValue">233 490 $</div>
+                  </div>
+                  <div class="finStatsItem">
+                    <img src="img/fs5.svg" alt="">
+                    <p class="finStatsItemTitle">All time growth:</p>
+                    <div class="finStatsItemValue">250%</div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="startBtn"><img src="img/startBtn.svg" alt=""></a>
             </div>
-            <div class="inputElement inputElement_sm mb-none">
-              <p class="inputElement_title">You're invited by</p>
-              <img src="img/uplnerIco.svg" alt="" class="inputElement_ico">
-              <input type="text">
-            </div>
-            <div class="radioBlock_Element">
-              <label class="radioBlock">I agree to all
-                <a href="#">terms and conditions</a>
-               <input type="checkbox">
-               <span class="checkmark"></span>
-               
-             </label>
-            </div>
-            <div class="registerBlock_Bottom">
-              <a href="#"><img src="img/submitRegister.png" alt="" class="registerBlock_BottomLink"></a>
-              <p class="registerBlock_BottomText">Already have an account? <a href="#">Sign in</a></p>
-            </div>
+           
           </section>
-            <!-- _register.less-->
+            <!-- _home.less-->
         </div>
 
          <!-- _footer.less-->
-        <footer> 
+        <footer class="homeFooter"> 
+          <img src="img/homeFooterLeftMan.svg" alt="" class="robotFooter">
+          <div class="propConsText">
+            <p>Reliability and durability</p>
+            <p>YOUR SUSTAINABLE</p>
+            <p>PASSIVE INCOME</p>
+          </div>
+          
+          <div class="footerFlex">
+            <img src="img/enx.svg" alt="">
+            <img src="img/bnb.svg" alt="">
+            <img src="img/trx.svg" alt="">
+            <img src="img/ethFooter.svg" alt="">
+            <img src="img/btc.svg" alt="">
+            <img src="img/usdtFooter.svg" alt="">
+            <img src="img/maticFooter.svg" alt="">
+          </div>
+         
           <div class="copy"><img src="img/copyright.svg" alt="">Copyright 2023 ENX. <br>All Rights Reserved.</div>
 
           <div class="contacts">
-            <a href="#" class="contactsLink"><img src="img/telegram.png" alt="">channel</a>
-            <a href="#" class="contactsLink"><img src="img/telegram.png" alt="">chat</a>
+            <a href="#" class="contactsLink"><img src="img/twitter.svg" alt="">twitter</a>
+            <a href="#" class="contactsLink"><img src="img/telegram.svg" alt="">chat</a>
             <a href="#" class="contactsLink underlineLink">User agreement</a>
             <a href="#" class="contactsLink underlineLink">Terms and Conditions</a>
           </div>
         </footer>
         <!-- _footer.less-->
        
-      </div>
+      
   
 
     <script src="js/scripts.min.js"></script>

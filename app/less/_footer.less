@@ -4,17 +4,17 @@ footer{
     bottom: 0;
     margin: 60px auto 0;
     transform: translate(-50%, 0);
-    max-width: 100%;
+    max-width: 1400px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
-    padding: 0 50px 40px;
+    padding: 0 30px 40px;
     z-index: 2;
     .enxMan{
         position: absolute;
-        right: 50px;
-        bottom: 115%;
+        left: 30px;
+        bottom: 55%;
     }
     .enxManLogin{
         position: absolute;
@@ -35,20 +35,21 @@ footer{
     }
     .enxManRecovery{
         position: absolute;
-        left: 50%;
-        bottom: 50px;
-        transform: translate(-50%, 0);
+        left: 30px;
+        bottom: 55%;
+        transform : rotateY(-180deg);
     }
     .enxManPassword{
         position: absolute;
-        left: 50%;
-        bottom: 50px;
-        transform: translate(-50%, 0);
+        left: 30px;
+        bottom: 55%;
+        transform : rotateY(-180deg);
     }
     .copy{
         color: @accent;
         font-size: 14px;
         line-height: 19px;
+        display: none;
     }
     .contacts{
         display: flex;
@@ -84,5 +85,125 @@ footer{
                 transform: scale(1.1);
             }
         }
+    }    
+}
+.homeFooter{
+    margin-top: 380px;
+    position: relative;
+    background-image: url(../img/footerBg.svg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    &::before{
+        content: url(../img/footerSmoke.svg);
+        position: absolute;
+        top: -210%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1;
     }
+    &::after{
+        content: url(../img/plate.svg);
+        position: absolute;
+        top: -400px;
+        left: calc(50% + 200px);
+        z-index: 0;
+    }
+    .propConsText{
+        max-width: 420px;
+        position: absolute;
+        bottom: calc(100% + 100px);
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 400;
+        p{
+            font-family: 'CasualHardcore';
+            font-size: 64px;
+            text-align: center; 
+            margin: 0 0 12px;
+            line-height: 74px;
+            background: linear-gradient(113.27deg, rgba(19, 170, 255, 0.4) 15.24%, #14F1FF 85.36%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+    .footerFlex{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        top: -30px;
+        
+        img{
+            position: relative;
+            margin: 10px;
+            cursor: pointer;
+            transition: all .3s ease;
+            z-index: 100;
+            &:hover{
+                transform: scale(1.2);
+                transform: translate(0, -20px);
+            }
+        }
+    }
+    .robotFooter{
+        position: absolute;
+        bottom: 90px;
+        left: 50px;
+    }
+    .copy{
+        position: absolute;
+        left: 50px;
+        bottom: 20px;
+    }
+    .contacts{
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+    }
+
+   
+}
+
+@media(max-width: 768px ){
+    footer{
+       position: relative;
+        left: 0;
+        top: 0;
+        right: 0; 
+        width: 100%;
+        transform: translate(0,0);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .contacts{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .contactsLink{
+                text-align: center;
+                width: 49%;
+                img{
+                    margin: 0 auto;
+                }
+            }
+            .underlineLink{
+                width: 100%;
+                padding: 4px;
+            }
+        }
+    }
+    .copy{
+        width: 100%;
+        padding-top: 32px;
+        text-align: center;
+    }
+
 }

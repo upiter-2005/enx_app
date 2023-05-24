@@ -5,10 +5,7 @@
     max-width: 710px;
     width: 100%;
     margin: 10px auto;
-    background-image: url(../img/bg-register.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+   
     padding: 34px;
     position: relative;
     z-index: 50;
@@ -43,6 +40,10 @@
         &Link{
             margin-bottom: 0;
             margin-top: 20px;
+            transition: all .3s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
         &Text{
             margin-top: 10px;
@@ -50,6 +51,41 @@
                 color: #EBFF00;
             }
             
+        }
+    }
+}
+
+@media(max-width: 768px ){
+    .registerBlock{
+        
+        .enxMan{
+         
+        }
+        .fonBg{
+            
+        }
+        &_Top{
+            
+            &Link{
+                width: 98px;
+            }
+            
+        }
+        &_Bottom{
+           
+            
+            &Link{
+              width: 100px;
+              margin-top: 12px;
+            }
+            &Text{
+               font-size: 16px;
+               margin-top: 4px;
+                a{
+                    
+                }
+                
+            }
         }
     }
 }

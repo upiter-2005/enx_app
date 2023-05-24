@@ -22,6 +22,7 @@ header{
             font-family: "CasualHardcore";
             display: flex;
             flex-direction: column;
+            align-items: center;
             color: #00E5FF;
             text-decoration: none;
             text-align: center;
@@ -30,9 +31,48 @@ header{
             &:hover{
                 transform: scale(1.1);
             }
+            &:nth-child(4){
+                color: #FFB800;
+            }
             img{
                 width: 77px;
             }
+        }
+    }
+    .accountBtn{
+        font-family: "CasualHardcore";
+        display: flex;
+        flex-direction: column;
+        color: #00E5FF;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.mobMnuOpen, .toolsMnuOpen{
+    display: none;
+}
+@media(max-width: 768px ){
+    .toolsMnuOpen{
+        position: fixed;
+        top: 100px;
+        left: 0;
+        z-index: 500;
+    }
+    .mobMnuOpen, .toolsMnuOpen{
+        display: block;
+    }
+    .accountBtn{
+        display: none;
+    }
+    
+    header{
+        .headerBtns{
+            display: none;
         }
     }
 }

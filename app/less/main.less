@@ -13,6 +13,18 @@
 	font-style: normal;
 
 }
+
+@font-face {
+	font-family: 'XHARP';
+	src: url('../fonts/XHARPDemoRegular/XHARPDemoRegular.eot');
+	src: url('../fonts/XHARPDemoRegular/XHARPDemoRegular.eot') format('embedded-opentype'),
+			url('../fonts/XHARPDemoRegular/XHARPDemoRegular.woff') format('woff'),
+			url('../fonts/XHARPDemoRegular/XHARPDemoRegular.ttf') format('truetype'),
+			url('../fonts/XHARPDemoRegular/XHARPDemoRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
 *{
 	box-sizing: border-box;
 }
@@ -41,6 +53,12 @@ body {
 	background-attachment: fixed;
 
 }
+a{
+	transition: all .3s ease;
+	&:hover{
+		transform: scale(1.1);
+	}
+}
 .error-message {
     height: 10px;
     font-size: 18px;
@@ -60,6 +78,14 @@ button[disabled]{
 /*! HEADER start */
 @import "_header.less";
 /*! HEADER end */
+
+/*! LANGUAGES start */
+@import "_languages.less";
+/*! LANGUAGES end */
+
+/*! HOME start */
+@import "_home.less";
+/*! HOME end */
 
 /*! HEADER start */
 @import "_register.less";
